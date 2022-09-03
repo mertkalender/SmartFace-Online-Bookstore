@@ -95,5 +95,78 @@
     "flexProps": {
       "justifyContent": "CENTER"
     }
+  },
+  "#search": {
+    "flexProps": {
+      "flexGrow": 1,
+      "positionType": "RELATIVE",
+      "alignSelf": "STRETCH",
+      "alignItems": "CENTER",
+      "justifyContent": "FLEX_START",
+      "flexDirection": "ROW",
+      "alignContent": "CENTER"
+    }
+  },
+  "#mainPage": {
+    "&-list": {
+      "flexProps": {
+        "flexGrow": 5
+      }
+    },
+    "&-profileInfo": {
+      "flexProps": {
+        "flexGrow": 5,
+        "flexDirection": "ROW"
+      }
+    },
+    "&-searchButton": {
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "backgroundColor": "rgba( 248, 231, 28, 1 )"
+    },
+    "&-profilePhoto": {
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "borderRadius": null,
+      "borderWidth": null,
+      "borderColor": "rgba( 255, 255, 255, 0 )",
+      "alpha": 1,
+      "backgroundColor": "rgba( 189, 16, 224, 1 )"
+    },
+    "&-profileName": {
+      "flexProps": {
+        "flexGrow": 3
+      },
+      "backgroundColor": "rgba( 0, 0, 0, 0 )",
+      "textColor": "rgba( 0, 0, 0, 1 )",
+      "ellipsizeMode": "END",
+      "font": {
+        "name": "",
+        "family": "Default",
+        "style": "Regular",
+        "bold": false,
+        "italic": false
+      },
+      "width": null,
+      "height": null,
+      "marginLeft": 10
+    },
+    "&-headers": {
+      "textColor": "rgba( 0, 0, 0, 1 )",
+      "font": {
+        "name": "",
+        "family": "Default",
+        "style": "Bold",
+        "bold": true,
+        "italic": false
+      }
+    },
+    "&-bookList": {
+      "flexProps": {
+        "flexGrow": 1
+      }
+    }
   }
 }
