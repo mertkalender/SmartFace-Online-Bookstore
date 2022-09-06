@@ -39,6 +39,13 @@
       },
       "height": null,
       "width": null
+    },
+    "&-searchButton": {
+      "width": 78.13,
+      "height": 65.63,
+      "flexProps": {
+        "alignSelf": "CENTER"
+      }
     }
   }
 }

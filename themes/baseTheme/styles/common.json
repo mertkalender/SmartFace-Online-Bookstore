@@ -121,9 +121,21 @@
     },
     "&-searchButton": {
       "flexProps": {
-        "flexGrow": 1
+        "flexGrow": 1,
+        "alignSelf": "CENTER",
+        "flexShrink": null,
+        "positionType": "RELATIVE"
       },
-      "backgroundColor": "rgba( 248, 231, 28, 1 )"
+      "textColor": "rgba( 0, 0, 0, 1 )",
+      "font": {
+        "name": "",
+        "family": "FontAwesome5BrandsRegular",
+        "style": null,
+        "bold": false,
+        "italic": false,
+        "size": 30
+      },
+      "ellipsizeMode": "MIDDLE"
     },
     "&-profilePhoto": {
       "flexProps": {
@@ -144,7 +156,7 @@
       "ellipsizeMode": "END",
       "font": {
         "name": "",
-        "family": "Default",
+        "family": "SFProText",
         "style": "Regular",
         "bold": false,
         "italic": false
@@ -157,15 +169,135 @@
       "textColor": "rgba( 0, 0, 0, 1 )",
       "font": {
         "name": "",
-        "family": "Default",
-        "style": "Bold",
-        "bold": true,
+        "family": "FontAwesome5BrandsRegular",
+        "style": null,
+        "bold": false,
         "italic": false
       }
     },
     "&-bookList": {
       "flexProps": {
         "flexGrow": 1
+      }
+    }
+  },
+  "#header": {
+    "visible": false
+  },
+  "#detailsPage": {
+    "&-bookInfo": {
+      "flexProps": {
+        "flexGrow": 9,
+        "alignItems": "STRETCH",
+        "direction": "INHERIT",
+        "justifyContent": "CENTER",
+        "alignContent": "CENTER",
+        "flexWrap": "NOWRAP"
+      }
+    },
+    "&-description": {
+      "flexProps": {
+        "flexGrow": 4,
+        "alignSelf": "AUTO"
+      },
+      "textAlignment": "MIDCENTER",
+      "font": {
+        "name": "",
+        "family": "FontAwesome5BrandsRegular",
+        "style": null,
+        "bold": false,
+        "italic": false
+      }
+    },
+    "&-buttons": {
+      "flexProps": {
+        "flexGrow": 1,
+        "flexDirection": "ROW",
+        "alignItems": "CENTER",
+        "justifyContent": "CENTER"
+      }
+    },
+    "&-purchaseButton": {
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "alpha": 1,
+      "backgroundColor": {
+        "normal": "rgba( 0, 0, 0, 1 )"
+      },
+      "borderRadius": 25
+    }
+  },
+  "#bookPage": {
+    "&-header": {
+      "titleColor": "rgba( 0, 0, 0, 1 )",
+      "backgroundColor": "rgba( 0, 0, 0, 0 )"
+    },
+    "&-author": {
+      "flexProps": {
+        "flexGrow": 1,
+        "alignSelf": "STRETCH",
+        "positionType": "RELATIVE"
+      },
+      "textColor": "rgba( 0, 0, 0, 0.79 )",
+      "font": {
+        "name": "",
+        "family": "Default",
+        "style": "Regular",
+        "bold": false,
+        "italic": false
+      },
+      "textAlignment": "MIDCENTER"
+    },
+    "&-image": {
+      "flexProps": {
+        "flexGrow": 20
+      }
+    },
+    "&-bookName": {
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "textColor": "rgba( 0, 0, 0, 1 )",
+      "font": {
+        "name": "",
+        "family": "Default",
+        "style": "Bold",
+        "bold": true,
+        "italic": false
+      },
+      "textAlignment": "MIDCENTER"
+    },
+    "&-point": {
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "textAlignment": "MIDCENTER",
+      "font": {
+        "name": "",
+        "family": "Default",
+        "style": "Bold",
+        "bold": true,
+        "italic": false
+      },
+      "textColor": "rgba( 0, 0, 0, 1 )"
+    },
+    "&-detailButtons": {
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "borderRadius": 25,
+      "textColor": "rgba( 0, 0, 0, 1 )",
+      "backgroundColor": {
+        "normal": "rgba( 255, 255, 255, 1 )"
+      },
+      "margin": 5,
+      "font": {
+        "name": "",
+        "family": "FontAwesome5BrandsRegular",
+        "style": null,
+        "bold": false,
+        "italic": false
       }
     }
   }

@@ -21,13 +21,11 @@
         "family": "SFProText",
         "style": "Regular"
       },
-      "height": 90,
-      "left": 0,
+      "height": 40.63,
       "multiline": true,
       "textAlignment": "MIDCENTER",
       "textColor": "${mainTextColor}",
-      "top": 0,
-      "width": null
+      "width": 396.88
     },
     "&-btnSayHello": {
       "flexProps": {
@@ -56,6 +54,7 @@
       "width": null,
       "marginBottom": 10,
       "marginTop": 10
-    }
+    },
+    "backgroundColor": "rgba( 0, 0, 0, 0.04 )"
   }
 }

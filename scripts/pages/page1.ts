@@ -3,10 +3,16 @@ import Label from '@smartface/native/ui/label';
 import { Route, Router } from '@smartface/router';
 import { styleableComponentMixin } from '@smartface/styling-context';
 import { i18n } from '@smartface/i18n';
+import { Book, getBooks } from 'services/book';
+import LviBook from "components/LviBook";
+import $Simple_gridviewItem from "generated/my-components/Simple_gridviewItem"
+
 
 class StyleableLabel extends styleableComponentMixin(Label) {}
 
 export default class Page1 extends Page1Design {
+  private GVIBook: $Simple_gridviewItem;
+  private data: Book[] = []
   private disposeables: (() => void)[] = [];
   lbl: StyleableLabel;
   constructor(private router?: Router, private route?: Route) {
@@ -15,8 +21,40 @@ export default class Page1 extends Page1Design {
     console.log('[page1] constructor');
   }
 
+  initListView() {
+    // onRowHeight can be used as alternative
+    this.GVIBook.rowHeight = LviBook.getHeight();
+    this.GVIBook.onRowBind = (listViewItem: LviBook, index: number) => {
+      listViewItem.title = this.data[index].name.first;
+      listViewItem.imgName.loadFromUrl({
+        url: this.data[index].image,
+        useHTTPCacheControl: true,
+      });
+    };
+
+    this.GVIBook.onPullRefresh = () => {
+      this.refreshListView();
+      this.GVIBook.stopRefresh();
+    };
+  }
+
+  refreshListView() {
+    this.GVIBook.itemCount = this.data.length;
+    this.GVIBook.refreshData();
+  }
+
+
+    async getUsers() {
+    try {
+      const response = await getBooks();
+      this.data = response.results;
+      this.refreshListView();
+    } catch (e) {
+      alert(JSON.stringify(e, null, "\t"));
+    }
+  }
+
   setTexts() {
-    this.btnNext.text = i18n.instance.t('nextPage');
     this.lbl.text = i18n.instance.t('runtimeLabel');
   }
 
@@ -28,9 +66,6 @@ export default class Page1 extends Page1Design {
     super.onShow();
     console.log('[page1] onShow');
     this.disposeables.push(
-      this.btnNext.on('press', () => {
-        this.router.push('page2', { message: i18n.instance.t('helloWorld') });
-      })
     );
   }
   /**

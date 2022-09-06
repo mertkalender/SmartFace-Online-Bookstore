@@ -8,10 +8,9 @@
 				"children": [
 					"a829471c",
 					"35f1c1a1",
-                    "0794-669f-111b-d300",
-					"8e22-8e5c-8917-dc71",
-					"9e3d-3c8c-de2c-aad8",
-					"cd68-9fe6-7d1d-510a"
+					"3215-d288-97a5-f29c",
+					"c228-11aa-5a2a-7a17",
+					"9c1e-ddf2-44fe-b35d"
 				],
 				"isRemovable": true,
 				"name": "page2",
@@ -24,8 +23,7 @@
 				"orientation": "PORTRAIT",
 				"safeAreaEnabled": true
 			},
-			"version": "6.15.1",
-			"degree": 0
+			"version": "6.15.1"
 		},
 		{
 			"className": ".sf-statusBar",
@@ -37,11 +35,10 @@
 				"parent": "7761adc8"
 			},
 			"type": "StatusBar",
-			"userProps": {},
-			"degree": 1
+			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".sf-headerBar #bookPage-header",
 			"id": "35f1c1a1",
 			"props": {
 				"children": [],
@@ -53,103 +50,147 @@
 			"type": "HeaderBar",
 			"userProps": {
 				"title": "Second Page"
-			},
-			"degree": 1
-		},
-		{
-			"className": ".sf-flexLayout #page1-wrapper",
-			"id": "8e22-8e5c-8917-dc71",
-			"props": {
-				"children": [
-					"6112-0cb4-58cc-932e"
-				],
-				"name": "flexLayout1",
-				"parent": "7761adc8"
-			},
-			"type": "FlexLayout",
-			"userProps": {},
-			"degree": 1
-		},
-		{
-			"className": ".sf-button #page2-btnLanguage",
-			"id": "0794-669f-111b-d300",
-			"oldName": "btnSayHello_1",
-			"props": {
-				"autoHeight": 51.11111111111111,
-				"children": [],
-				"name": "btnLanguage",
-				"parent": "7761adc8",
-				"text": "Language Demo",
-				"usePageVariable": true
-			},
-			"type": "Button",
-			"userProps": {
-				"autoHeight": 51.11111111111111,
-				"testId": "grk_Dhoxx",
-				"text": "Language Demo",
-				"usePageVariable": true
 			}
 		},
 		{
-			"className": ".sf-button #page2-btnSayHello",
-			"id": "9e3d-3c8c-de2c-aad8",
+			"className": ".sf-flexLayout #detailsPage-bookInfo",
+			"id": "3215-d288-97a5-f29c",
 			"props": {
-				"autoHeight": 51.11111111111111,
-				"children": [],
-				"name": "btnSayHello",
-				"parent": "7761adc8",
-				"text": "Say Hello",
-				"usePageVariable": true
+				"children": [
+					"7aad-ceb6-ae38-3f9e",
+					"13f2-c53e-07ac-4167",
+					"f82e-5f14-4e31-c61d",
+					"5c87-0bcf-d22a-9cad",
+					"44ac-7bd1-f433-a186"
+				],
+				"name": "flexLayout2",
+				"parent": "7761adc8"
 			},
-			"type": "Button",
-			"userProps": {
-				"autoHeight": 51.11111111111111,
-				"marginBottom": 10,
-				"testId": "grk_Dhoxx",
-				"text": "Say Hello",
-				"usePageVariable": true
-			},
-			"degree": 1
+			"type": "FlexLayout",
+			"userProps": {}
 		},
 		{
-			"className": ".sf-button #page2-btnOpenModal",
-			"id": "cd68-9fe6-7d1d-510a",
+			"className": ".sf-imageView #bookPage-image",
+			"id": "7aad-ceb6-ae38-3f9e",
 			"props": {
-				"autoHeight": 51.11111111111111,
 				"children": [],
-				"name": "btnOpenModal",
-				"parent": "7761adc8",
-				"text": "Open a Modal Page",
-				"usePageVariable": true
+				"name": "imageView1",
+				"parent": "3215-d288-97a5-f29c"
 			},
-			"type": "Button",
-			"userProps": {
-				"autoHeight": 51.11111111111111,
-				"testId": "j--ykLmM5",
-				"text": "Open a Modal Page",
-				"usePageVariable": true
-			},
-			"degree": 1
+			"type": "ImageView",
+			"userProps": {}
 		},
 		{
-			"className": ".sf-label #page1-lbl",
-			"id": "6112-0cb4-58cc-932e",
+			"className": ".sf-label #bookPage-bookName",
+			"id": "13f2-c53e-07ac-4167",
 			"props": {
-				"autoHeight": 76.66666666666667,
 				"children": [],
-				"name": "lbl",
-				"parent": "8e22-8e5c-8917-dc71",
-				"text": "Page2",
-				"usePageVariable": true
+				"name": "label1",
+				"parent": "3215-d288-97a5-f29c",
+				"text": "Book Title"
 			},
 			"type": "Label",
 			"userProps": {
-				"autoHeight": 76.66666666666667,
-				"text": "Page2",
-				"usePageVariable": true,
-				"testId": "tmNa7lbaU"
+				"text": "Book Title"
+			}
+		},
+		{
+			"className": ".sf-label #bookPage-author",
+			"id": "f82e-5f14-4e31-c61d",
+			"props": {
+				"children": [],
+				"name": "label2",
+				"parent": "3215-d288-97a5-f29c",
+				"text": "Author"
 			},
-			"degree": 2
+			"type": "Label",
+			"userProps": {
+				"text": "Author"
+			}
+		},
+		{
+			"className": ".sf-label #bookPage-point",
+			"id": "5c87-0bcf-d22a-9cad",
+			"props": {
+				"children": [],
+				"name": "label1_1",
+				"parent": "3215-d288-97a5-f29c",
+				"text": "4.5/5"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "4.5/5"
+			}
+		},
+		{
+			"className": ".sf-textArea #detailsPage-description",
+			"id": "44ac-7bd1-f433-a186",
+			"props": {
+				"children": [],
+				"name": "textArea1",
+				"parent": "3215-d288-97a5-f29c",
+				"text": "Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur. \n  Aliquam erat volutpat. Suspendisse potenti."
+			},
+			"type": "TextArea",
+			"userProps": {
+				"text": "Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur. \n  Aliquam erat volutpat. Suspendisse potenti."
+			}
+		},
+		{
+			"className": ".sf-flexLayout #detailsPage-buttons",
+			"id": "c228-11aa-5a2a-7a17",
+			"props": {
+				"children": [
+					"fa60-b295-298a-11ac",
+					"b52d-f9a3-4496-0ba3"
+				],
+				"name": "flexLayout4",
+				"parent": "7761adc8"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-button #bookPage-detailButtons",
+			"id": "fa60-b295-298a-11ac",
+			"props": {
+				"children": [],
+				"name": "button3",
+				"parent": "c228-11aa-5a2a-7a17",
+				"text": " PreView"
+			},
+			"type": "Button",
+			"userProps": {
+				"text": " PreView"
+			}
+		},
+		{
+			"className": ".sf-button #bookPage-detailButtons",
+			"id": "b52d-f9a3-4496-0ba3",
+			"props": {
+				"children": [],
+				"name": "button2",
+				"parent": "c228-11aa-5a2a-7a17",
+				"text": " ReViews"
+			},
+			"type": "Button",
+			"userProps": {
+				"text": " ReViews"
+			}
+		},
+		{
+			"className": ".sf-button #detailsPage-purchaseButton",
+			"id": "9c1e-ddf2-44fe-b35d",
+			"props": {
+				"children": [],
+				"name": "button1",
+				"parent": "7761adc8",
+				"text": "Buy Now for $46.99"
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Buy Now for $46.99"
+			}
 		}
 	]
 }
