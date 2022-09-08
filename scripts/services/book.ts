@@ -26,13 +26,13 @@ type GetBooksResponse = {
 };
 
 export async function getBooks(): Promise<GetBooksResponse> {
-  try {
-    const response: GetBooksResponse = await fetch("/?results=100", {
-      method: "GET",
-    });
-    return response;
-  } catch (e) {
-    console.error(e);
-    throw e;
+    try {
+      const response: GetBooksResponse = await fetch("/?results=100", {
+        method: "GET",
+      });
+      return response;
+    } catch (e) {
+      console.error(e);
+      throw e;
+    }
   }
-}

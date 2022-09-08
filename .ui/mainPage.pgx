@@ -1,0 +1,272 @@
+{
+	"components": [
+		{
+			"className": ".sf-page #page1",
+			"id": "73c0-dfdd-1c36-ca4d",
+			"initialized": false,
+			"props": {
+				"children": [
+					"1439-dcd4-0006-b4c5",
+					"e067-7022-3b00-7c91",
+					"6f7b-3e59-8da6-3ddc",
+					"c9d6-4754-696b-f1b3",
+					"d912-db22-d060-defd"
+				],
+				"isRemovable": true,
+				"name": "mainPage",
+				"orientation": "PORTRAIT",
+				"parent": null,
+				"safeAreaEnabled": true
+			},
+			"type": "Page",
+			"userProps": {
+				"orientation": "PORTRAIT",
+				"safeAreaEnabled": true
+			},
+			"version": "6.15.1",
+			"degree": 0
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "1439-dcd4-0006-b4c5",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "73c0-dfdd-1c36-ca4d"
+			},
+			"type": "StatusBar",
+			"userProps": {},
+			"degree": 1
+		},
+		{
+			"className": ".sf-headerBar #header",
+			"id": "e067-7022-3b00-7c91",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "73c0-dfdd-1c36-ca4d",
+				"title": "Page1"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "Page1"
+			},
+			"degree": 1
+		},
+		{
+			"className": ".sf-flexLayout #search",
+			"id": "6f7b-3e59-8da6-3ddc",
+			"oldName": "header",
+			"props": {
+				"children": [
+					"4f2d-1978-48e9-a81b"
+				],
+				"name": "profile",
+				"parent": "73c0-dfdd-1c36-ca4d"
+			},
+			"type": "FlexLayout",
+			"userProps": {},
+			"degree": 1
+		},
+		{
+			"className": ".sf-flexLayout #mainPage-list",
+			"id": "c9d6-4754-696b-f1b3",
+			"oldName": "flexLayout2",
+			"props": {
+				"children": [
+					"2d35-19c3-0fa1-168a",
+					"72ab-cbf4-094a-0b5c"
+				],
+				"name": "popularBooksView",
+				"parent": "73c0-dfdd-1c36-ca4d"
+			},
+			"type": "FlexLayout",
+			"userProps": {},
+			"degree": 1
+		},
+		{
+			"className": ".sf-flexLayout #mainPage-list",
+			"id": "d912-db22-d060-defd",
+			"oldName": "flexLayout3",
+			"props": {
+				"children": [
+					"ed14-839f-1b38-73a2",
+					"e0e9-9633-1a4c-e13a"
+				],
+				"name": "newestBooksView",
+				"parent": "73c0-dfdd-1c36-ca4d"
+			},
+			"type": "FlexLayout",
+			"userProps": {},
+			"degree": 1
+		},
+		{
+			"className": ".sf-flexLayout #mainPage-profileInfo",
+			"id": "4f2d-1978-48e9-a81b",
+			"oldName": "flexLayout4",
+			"props": {
+				"children": [
+					"8a63-2ac7-032d-682d",
+					"5689-1c8e-a0e1-c6bb",
+					"e790-47b5-2c29-bc36"
+				],
+				"name": "profileInfo",
+				"parent": "6f7b-3e59-8da6-3ddc"
+			},
+			"type": "FlexLayout",
+			"userProps": {},
+			"degree": 2
+		},
+		{
+			"className": ".sf-label #mainPage-headers",
+			"id": "2d35-19c3-0fa1-168a",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "popularBooks",
+				"parent": "c9d6-4754-696b-f1b3",
+				"text": "Popular Books"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Popular Books"
+			},
+			"degree": 2
+		},
+		{
+			"className": ".sf-label #mainPage-headers",
+			"id": "ed14-839f-1b38-73a2",
+			"oldName": "popularBooks_1",
+			"props": {
+				"children": [],
+				"name": "newestBooks",
+				"parent": "d912-db22-d060-defd",
+				"text": "Newest"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Newest"
+			},
+			"degree": 2
+		},
+		{
+			"className": ".sf-gridView #mainPage-bookList",
+			"id": "72ab-cbf4-094a-0b5c",
+			"oldName": "gridView1",
+			"props": {
+				"children": [
+					"623d-620a-52d3-98c3"
+				],
+				"itemCount": 5,
+				"itemLength": 227,
+				"layoutManager": {
+					"spanCount": 2
+				},
+				"name": "popularBooksList",
+				"parent": "c9d6-4754-696b-f1b3"
+			},
+			"type": "GridView",
+			"userProps": {
+				"itemCount": 5,
+				"itemLength": 227,
+				"layoutManager": {
+					"spanCount": 2
+				}
+			},
+			"degree": 2
+		},
+		{
+			"className": ".sf-listView #mainPage-bookList",
+			"id": "e0e9-9633-1a4c-e13a",
+			"oldName": "listView2",
+			"props": {
+				"children": [
+					"d183-e310-f7ff-455e"
+				],
+				"itemCount": 5,
+				"name": "newestBooksList",
+				"parent": "d912-db22-d060-defd",
+				"rowHeight": 54
+			},
+			"type": "ListView",
+			"userProps": {
+				"itemCount": 5,
+				"rowHeight": 54
+			},
+			"degree": 2
+		},
+		{
+			"className": ".sf-imageView #mainPage-profilePhoto",
+			"id": "8a63-2ac7-032d-682d",
+			"oldName": "imageView2",
+			"props": {
+				"children": [],
+				"name": "profilePhoto",
+				"parent": "4f2d-1978-48e9-a81b"
+			},
+			"type": "ImageView",
+			"userProps": {},
+			"degree": 3
+		},
+		{
+			"className": ".sf-gridViewItem",
+			"id": "623d-620a-52d3-98c3",
+			"props": {
+				"children": [],
+				"name": "gridViewItem1",
+				"parent": "72ab-cbf4-094a-0b5c"
+			},
+			"type": "GridViewItem",
+			"userProps": {},
+			"degree": 3
+		},
+		{
+			"className": ".sf-listViewItem",
+			"id": "d183-e310-f7ff-455e",
+			"props": {
+				"children": [],
+				"name": "listViewItem2",
+				"parent": "e0e9-9633-1a4c-e13a"
+			},
+			"type": "ListViewItem",
+			"userProps": {},
+			"degree": 3
+		},
+		{
+			"className": ".sf-label #mainPage-profileName",
+			"id": "5689-1c8e-a0e1-c6bb",
+			"oldName": "profileName",
+			"props": {
+				"children": [],
+				"maxLines": 1,
+				"name": "welcomeName",
+				"parent": "4f2d-1978-48e9-a81b",
+				"text": "Hi, Dustin!"
+			},
+			"type": "Label",
+			"userProps": {
+				"maxLines": 1,
+				"text": "Hi, Dustin!"
+			},
+			"degree": 3
+		},
+		{
+			"className": ".sf-label #mainPage-searchButton",
+			"id": "e790-47b5-2c29-bc36",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "searchButton",
+				"parent": "4f2d-1978-48e9-a81b",
+				"text": ""
+			},
+			"type": "Label",
+			"userProps": {
+				"text": ""
+			},
+			"degree": 3
+		}
+	]
+}

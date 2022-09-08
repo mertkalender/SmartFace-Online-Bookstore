@@ -1,0 +1,120 @@
+{
+	"components": [
+		{
+			"className": ".sf-listViewItem .simple-listviewItem",
+			"hiddenComponent": false,
+			"id": "1841-ff9a-b968-028d",
+			"initialized": false,
+			"props": {
+				"children": [
+					"cf41-01de-fb7d-541a",
+					"7094-abfb-afb2-8d16",
+					"bd8f-5e00-4110-7fd7"
+				],
+				"name": "lviBook",
+				"parent": "57f4-201f-4bfc-5fc6"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ListViewItem",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-imageView #mainPage-booList-image",
+			"id": "cf41-01de-fb7d-541a",
+			"props": {
+				"children": [],
+				"name": "imageView1",
+				"parent": "1841-ff9a-b968-028d"
+			},
+			"type": "ImageView",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-flexLayout #mainPage-bookList-textView",
+			"id": "7094-abfb-afb2-8d16",
+			"props": {
+				"children": [
+					"7472-aeaf-ef16-935c",
+					"d598-2746-4f35-5ebf",
+					"023f-4d3e-966f-3af0"
+				],
+				"name": "flexLayout1",
+				"parent": "1841-ff9a-b968-028d"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-label #mainPage-bookList-point",
+			"id": "7472-aeaf-ef16-935c",
+			"props": {
+				"children": [],
+				"maxLines": 1,
+				"name": "label3",
+				"parent": "7094-abfb-afb2-8d16",
+				"text": "4.5/5"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Label",
+			"userProps": {
+				"maxLines": 1,
+				"text": "4.5/5"
+			}
+		},
+		{
+			"className": ".sf-label #mainPage-bookList-bookAuthor",
+			"id": "d598-2746-4f35-5ebf",
+			"props": {
+				"children": [],
+				"name": "label2",
+				"parent": "7094-abfb-afb2-8d16",
+				"text": "Book Author"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Book Author"
+			}
+		},
+		{
+			"className": ".sf-label #mainPage-bookList-bookTitle",
+			"id": "023f-4d3e-966f-3af0",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "7094-abfb-afb2-8d16",
+				"text": "Book Title"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Book Title"
+			}
+		},
+		{
+			"className": ".sf-flexLayout .simple-listviewItem-line .simple-listviewItem-simple-chevron .simple_listviewItem-flLine",
+			"id": "bd8f-5e00-4110-7fd7",
+			"props": {
+				"children": [],
+				"name": "flLine",
+				"parent": "1841-ff9a-b968-028d"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		}
+	]
+}

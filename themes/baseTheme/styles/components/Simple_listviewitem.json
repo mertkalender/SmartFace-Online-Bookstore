@@ -52,5 +52,40 @@
       "marginTop": null,
       "right": 0
     }
+  },
+  ".simple": {
+    "&-gridviewItem": {
+      "&-title": {
+        "flexProps": {
+          "alignSelf": "AUTO"
+        },
+        "textAlignment": "MIDLEFT"
+      },
+      "&-subtitle": {
+        "textAlignment": "MIDLEFT"
+      }
+    },
+    "&_gridviewItem": {
+      "&-imgPreview": {
+        "width": 342.19,
+        "height": 173.44
+      }
+    },
+    "&_listviewItem": {
+      "&-lblTitle": {
+        "width": 256.25,
+        "height": 53.13
+      },
+      "&-flLine": {
+        "left": 10.94,
+        "top": 81.25
+      }
+    },
+    "&-listviewItem": {
+      "flexProps": {
+        "flexGrow": null,
+        "alignSelf": "STRETCH"
+      }
+    }
   }
 }

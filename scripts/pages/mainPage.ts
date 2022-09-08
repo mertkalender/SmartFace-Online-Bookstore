@@ -1,17 +1,17 @@
-import Page1Design from 'generated/pages/page1';
+import MainPage from 'generated/pages/mainPage';
 import Label from '@smartface/native/ui/label';
 import { Route, Router } from '@smartface/router';
 import { styleableComponentMixin } from '@smartface/styling-context';
 import { i18n } from '@smartface/i18n';
 import { Book, getBooks } from 'services/book';
 import LviBook from "components/LviBook";
-import $Simple_gridviewItem from "generated/my-components/Simple_gridviewItem"
-
+import GviBook from "components/GviBook"
 
 class StyleableLabel extends styleableComponentMixin(Label) {}
 
-export default class Page1 extends Page1Design {
-  private GVIBook: $Simple_gridviewItem;
+export default class mainPage extends MainPage {
+  private GVIBook: GviBook;
+  private LVIBook: LviBook;
   private data: Book[] = []
   private disposeables: (() => void)[] = [];
   lbl: StyleableLabel;
@@ -23,31 +23,56 @@ export default class Page1 extends Page1Design {
 
   initListView() {
     // onRowHeight can be used as alternative
-    this.GVIBook.rowHeight = LviBook.getHeight();
-    this.GVIBook.onRowBind = (listViewItem: LviBook, index: number) => {
-      listViewItem.title = this.data[index].name.first;
+    this.LVIBook.rowHeight = LviBook.getHeight();
+    this.LVIBook.onRowBind = (listViewItem: LviBook, index: number) => {
+      listViewItem.title = this.data[index].title;
       listViewItem.imgName.loadFromUrl({
         url: this.data[index].image,
         useHTTPCacheControl: true,
       });
     };
 
-    this.GVIBook.onPullRefresh = () => {
-      this.refreshListView();
+    this.LVIBook.onPullRefresh = () => {
+      this.refreshGridView();
       this.GVIBook.stopRefresh();
     };
   }
 
+
   refreshListView() {
+    this.LVIBook.itemCount = this.data.length;
+    this.LVIBook.refreshData();
+  }
+
+
+  initGridView() {
+    // onRowHeight can be used as alternative
+    this.GVIBook.rowHeight = GviBook.getHeight();
+    this.GVIBook.onRowBind = (gridViewItem: GviBook, index: number) => {
+        gridViewItem.title = this.data[index].title;
+        gridViewItem.imgName.loadFromUrl({
+            url: this.data[index].image,
+            useHTTPCacheControl: true,
+        });
+    };
+
+    this.GVIBook.onPullRefresh = () => {
+      this.refreshGridView();
+      this.GVIBook.stopRefresh();
+    };
+  }
+
+  refreshGridView() {
     this.GVIBook.itemCount = this.data.length;
     this.GVIBook.refreshData();
   }
 
 
-    async getUsers() {
+  async getUsers() {
     try {
       const response = await getBooks();
       this.data = response.results;
+      this.refreshGridView();
       this.refreshListView();
     } catch (e) {
       alert(JSON.stringify(e, null, "\t"));
@@ -64,7 +89,7 @@ export default class Page1 extends Page1Design {
    */
   onShow() {
     super.onShow();
-    console.log('[page1] onShow');
+    console.log('mainPage onShow');
     this.disposeables.push(
     );
   }
@@ -75,7 +100,7 @@ export default class Page1 extends Page1Design {
   onLoad() {
     super.onLoad();
     this.setTexts();
-    console.log('[page1] onLoad');
+    console.log('mainPage onLoad');
     this.headerBar.leftItemEnabled = false;
     this.addChild(this.lbl, 'page1lbl1unique', 'sf-label', (userProps: Record<string, any>) => {
       return { ...userProps };

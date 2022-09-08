@@ -1,0 +1,209 @@
+{
+	"components": [
+		{
+			"className": ".sf-page #page2",
+			"id": "e704-167c-966d-e30b",
+			"initialized": false,
+			"props": {
+				"children": [
+					"af87-2dfb-19e7-3475",
+					"23f9-6ae7-81be-071b",
+					"ca77-64de-1576-9a6a",
+					"2941-b7ef-7162-fba7",
+					"bec9-d51b-44df-ebcf"
+				],
+				"isRemovable": true,
+				"name": "detailsPage",
+				"orientation": "PORTRAIT",
+				"parent": null,
+				"safeAreaEnabled": true
+			},
+			"type": "Page",
+			"userProps": {
+				"orientation": "PORTRAIT",
+				"safeAreaEnabled": true
+			},
+			"version": "6.15.1",
+			"degree": 0
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "af87-2dfb-19e7-3475",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "e704-167c-966d-e30b"
+			},
+			"type": "StatusBar",
+			"userProps": {},
+			"degree": 1
+		},
+		{
+			"className": ".sf-headerBar #bookPage-header",
+			"id": "23f9-6ae7-81be-071b",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "e704-167c-966d-e30b",
+				"title": "Second Page"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "Second Page"
+			},
+			"degree": 1
+		},
+		{
+			"className": ".sf-flexLayout #detailsPage-bookInfo",
+			"id": "ca77-64de-1576-9a6a",
+			"props": {
+				"children": [
+					"8b41-7be7-55ea-feb8",
+					"7641-92fd-a3cc-bc46",
+					"c07e-e4d8-3d8f-f01d",
+					"e931-41e0-28c3-2a04",
+					"801d-e283-1109-df7b"
+				],
+				"name": "flexLayout2",
+				"parent": "e704-167c-966d-e30b"
+			},
+			"type": "FlexLayout",
+			"userProps": {},
+			"degree": 1
+		},
+		{
+			"className": ".sf-flexLayout #detailsPage-buttons",
+			"id": "2941-b7ef-7162-fba7",
+			"props": {
+				"children": [
+					"0f58-a6cb-6adb-fc1b",
+					"1c57-a3e3-e3c4-328a"
+				],
+				"name": "flexLayout4",
+				"parent": "e704-167c-966d-e30b"
+			},
+			"type": "FlexLayout",
+			"userProps": {},
+			"degree": 1
+		},
+		{
+			"className": ".sf-button #detailsPage-purchaseButton",
+			"id": "bec9-d51b-44df-ebcf",
+			"props": {
+				"children": [],
+				"name": "button1",
+				"parent": "e704-167c-966d-e30b",
+				"text": "Buy Now for $46.99"
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Buy Now for $46.99"
+			},
+			"degree": 1
+		},
+		{
+			"className": ".sf-imageView #bookPage-image",
+			"id": "8b41-7be7-55ea-feb8",
+			"props": {
+				"children": [],
+				"name": "imageView1",
+				"parent": "ca77-64de-1576-9a6a"
+			},
+			"type": "ImageView",
+			"userProps": {},
+			"degree": 2
+		},
+		{
+			"className": ".sf-button #bookPage-detailButtons",
+			"id": "0f58-a6cb-6adb-fc1b",
+			"props": {
+				"children": [],
+				"name": "button3",
+				"parent": "2941-b7ef-7162-fba7",
+				"text": " PreView"
+			},
+			"type": "Button",
+			"userProps": {
+				"text": " PreView"
+			},
+			"degree": 2
+		},
+		{
+			"className": ".sf-label #bookPage-bookName",
+			"id": "7641-92fd-a3cc-bc46",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "ca77-64de-1576-9a6a",
+				"text": "Book Title"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Book Title"
+			},
+			"degree": 2
+		},
+		{
+			"className": ".sf-button #bookPage-detailButtons",
+			"id": "1c57-a3e3-e3c4-328a",
+			"props": {
+				"children": [],
+				"name": "button2",
+				"parent": "2941-b7ef-7162-fba7",
+				"text": " ReViews"
+			},
+			"type": "Button",
+			"userProps": {
+				"text": " ReViews"
+			},
+			"degree": 2
+		},
+		{
+			"className": ".sf-label #bookPage-author",
+			"id": "c07e-e4d8-3d8f-f01d",
+			"props": {
+				"children": [],
+				"name": "label2",
+				"parent": "ca77-64de-1576-9a6a",
+				"text": "Author"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Author"
+			},
+			"degree": 2
+		},
+		{
+			"className": ".sf-label #bookPage-point",
+			"id": "e931-41e0-28c3-2a04",
+			"props": {
+				"children": [],
+				"name": "label1_1",
+				"parent": "ca77-64de-1576-9a6a",
+				"text": "4.5/5"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "4.5/5"
+			},
+			"degree": 2
+		},
+		{
+			"className": ".sf-textArea #detailsPage-description",
+			"id": "801d-e283-1109-df7b",
+			"props": {
+				"children": [],
+				"name": "textArea1",
+				"parent": "ca77-64de-1576-9a6a",
+				"text": "Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur. \n  Aliquam erat volutpat. Suspendisse potenti."
+			},
+			"type": "TextArea",
+			"userProps": {
+				"text": "Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur. \n  Aliquam erat volutpat. Suspendisse potenti."
+			},
+			"degree": 2
+		}
+	]
+}
