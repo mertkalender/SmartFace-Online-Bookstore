@@ -46,6 +46,7 @@
       "flexProps": {
         "alignSelf": "CENTER"
       }
-    }
+    },
+    "backgroundColor": "rgba( 255, 255, 255, 1 )"
   }
 }

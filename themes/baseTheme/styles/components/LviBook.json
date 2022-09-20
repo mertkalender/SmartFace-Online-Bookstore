@@ -1,0 +1,14 @@
+{
+  ".lviBook": {
+    "width": 375,
+    "height": 185.94,
+    "&-author": {
+      "width": 250,
+      "height": 76.56
+    },
+    "&-title": {
+      "width": 250,
+      "height": 62.5
+    }
+  }
+}

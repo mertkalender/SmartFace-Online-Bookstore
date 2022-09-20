@@ -9,6 +9,17 @@ export default class LviBook extends LviBookDesign {
     }
 
     static getHeight(): number {
-    return 50; // Normally themeService's getStyle method should be used
+    return 150; // Normally themeService's getStyle method should be used
     }
+
+    // set setTitle (newTitle: string) {
+    //     this.title = newTitle
+    // }
+
+    set titleText(value: string) {
+        this.label1.text = typeof value === "string" ? value : "";
+        // E.g. you can check its type to avoid wrong assignments
+        this.__titleText = typeof value === "string" ? value : "";
+    }
+    
 }

@@ -3,7 +3,7 @@
 		{
 			"className": ".sf-page #page2",
 			"id": "e704-167c-966d-e30b",
-			"initialized": false,
+			"initialized": true,
 			"props": {
 				"children": [
 					"af87-2dfb-19e7-3475",
@@ -23,8 +23,7 @@
 				"orientation": "PORTRAIT",
 				"safeAreaEnabled": true
 			},
-			"version": "6.15.1",
-			"degree": 0
+			"version": "6.15.1"
 		},
 		{
 			"className": ".sf-statusBar",
@@ -36,8 +35,7 @@
 				"parent": "e704-167c-966d-e30b"
 			},
 			"type": "StatusBar",
-			"userProps": {},
-			"degree": 1
+			"userProps": {}
 		},
 		{
 			"className": ".sf-headerBar #bookPage-header",
@@ -47,13 +45,12 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "e704-167c-966d-e30b",
-				"title": "Second Page"
+				"title": "Details Page"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "Second Page"
-			},
-			"degree": 1
+				"title": "Details Page"
+			}
 		},
 		{
 			"className": ".sf-flexLayout #detailsPage-bookInfo",
@@ -70,38 +67,7 @@
 				"parent": "e704-167c-966d-e30b"
 			},
 			"type": "FlexLayout",
-			"userProps": {},
-			"degree": 1
-		},
-		{
-			"className": ".sf-flexLayout #detailsPage-buttons",
-			"id": "2941-b7ef-7162-fba7",
-			"props": {
-				"children": [
-					"0f58-a6cb-6adb-fc1b",
-					"1c57-a3e3-e3c4-328a"
-				],
-				"name": "flexLayout4",
-				"parent": "e704-167c-966d-e30b"
-			},
-			"type": "FlexLayout",
-			"userProps": {},
-			"degree": 1
-		},
-		{
-			"className": ".sf-button #detailsPage-purchaseButton",
-			"id": "bec9-d51b-44df-ebcf",
-			"props": {
-				"children": [],
-				"name": "button1",
-				"parent": "e704-167c-966d-e30b",
-				"text": "Buy Now for $46.99"
-			},
-			"type": "Button",
-			"userProps": {
-				"text": "Buy Now for $46.99"
-			},
-			"degree": 1
+			"userProps": {}
 		},
 		{
 			"className": ".sf-imageView #bookPage-image",
@@ -112,23 +78,7 @@
 				"parent": "ca77-64de-1576-9a6a"
 			},
 			"type": "ImageView",
-			"userProps": {},
-			"degree": 2
-		},
-		{
-			"className": ".sf-button #bookPage-detailButtons",
-			"id": "0f58-a6cb-6adb-fc1b",
-			"props": {
-				"children": [],
-				"name": "button3",
-				"parent": "2941-b7ef-7162-fba7",
-				"text": " PreView"
-			},
-			"type": "Button",
-			"userProps": {
-				"text": " PreView"
-			},
-			"degree": 2
+			"userProps": {}
 		},
 		{
 			"className": ".sf-label #bookPage-bookName",
@@ -142,23 +92,7 @@
 			"type": "Label",
 			"userProps": {
 				"text": "Book Title"
-			},
-			"degree": 2
-		},
-		{
-			"className": ".sf-button #bookPage-detailButtons",
-			"id": "1c57-a3e3-e3c4-328a",
-			"props": {
-				"children": [],
-				"name": "button2",
-				"parent": "2941-b7ef-7162-fba7",
-				"text": " ReViews"
-			},
-			"type": "Button",
-			"userProps": {
-				"text": " ReViews"
-			},
-			"degree": 2
+			}
 		},
 		{
 			"className": ".sf-label #bookPage-author",
@@ -172,8 +106,7 @@
 			"type": "Label",
 			"userProps": {
 				"text": "Author"
-			},
-			"degree": 2
+			}
 		},
 		{
 			"className": ".sf-label #bookPage-point",
@@ -187,8 +120,7 @@
 			"type": "Label",
 			"userProps": {
 				"text": "4.5/5"
-			},
-			"degree": 2
+			}
 		},
 		{
 			"className": ".sf-textArea #detailsPage-description",
@@ -202,8 +134,63 @@
 			"type": "TextArea",
 			"userProps": {
 				"text": "Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur. \n  Aliquam erat volutpat. Suspendisse potenti."
+			}
+		},
+		{
+			"className": ".sf-flexLayout #detailsPage-buttons",
+			"id": "2941-b7ef-7162-fba7",
+			"props": {
+				"children": [
+					"0f58-a6cb-6adb-fc1b",
+					"1c57-a3e3-e3c4-328a"
+				],
+				"name": "flexLayout4",
+				"parent": "e704-167c-966d-e30b"
 			},
-			"degree": 2
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-button #bookPage-detailButtons",
+			"id": "0f58-a6cb-6adb-fc1b",
+			"props": {
+				"children": [],
+				"name": "button3",
+				"parent": "2941-b7ef-7162-fba7",
+				"text": " PreView"
+			},
+			"type": "Button",
+			"userProps": {
+				"text": " PreView"
+			}
+		},
+		{
+			"className": ".sf-button #bookPage-detailButtons",
+			"id": "1c57-a3e3-e3c4-328a",
+			"props": {
+				"children": [],
+				"name": "button2",
+				"parent": "2941-b7ef-7162-fba7",
+				"text": " ReViews"
+			},
+			"type": "Button",
+			"userProps": {
+				"text": " ReViews"
+			}
+		},
+		{
+			"className": ".sf-button #detailsPage-purchaseButton",
+			"id": "bec9-d51b-44df-ebcf",
+			"props": {
+				"children": [],
+				"name": "button1",
+				"parent": "e704-167c-966d-e30b",
+				"text": "Buy Now for $46.99"
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Buy Now for $46.99"
+			}
 		}
 	]
 }

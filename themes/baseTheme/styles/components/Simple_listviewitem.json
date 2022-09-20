@@ -57,18 +57,41 @@
     "&-gridviewItem": {
       "&-title": {
         "flexProps": {
-          "alignSelf": "AUTO"
+          "alignSelf": "AUTO",
+          "flexGrow": 1
         },
         "textAlignment": "MIDLEFT"
       },
       "&-subtitle": {
-        "textAlignment": "MIDLEFT"
+        "textAlignment": "MIDLEFT",
+        "flexProps": {
+          "flexGrow": 1,
+          "alignSelf": "AUTO"
+        }
+      },
+      "&-preview": {
+        "imageFillType": "ASPECTFIT",
+        "flexProps": {
+          "flexGrow": 10
+        }
+      },
+      "width": 165,
+      "height": 227,
+      "flexProps": {
+        "positionType": "RELATIVE",
+        "alignSelf": "AUTO",
+        "alignItems": "STRETCH",
+        "justifyContent": "FLEX_START",
+        "alignContent": "CENTER"
       }
     },
     "&_gridviewItem": {
       "&-imgPreview": {
         "width": 342.19,
-        "height": 173.44
+        "height": 173.44,
+        "flexProps": {
+          "flexGrow": 15
+        }
       }
     },
     "&_listviewItem": {
@@ -83,9 +106,10 @@
     },
     "&-listviewItem": {
       "flexProps": {
-        "flexGrow": null,
+        "flexGrow": 1,
         "alignSelf": "STRETCH"
-      }
+      },
+      "marginBottom": 10
     }
   }
 }

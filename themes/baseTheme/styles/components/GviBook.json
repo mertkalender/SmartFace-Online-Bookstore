@@ -1,0 +1,21 @@
+{
+  ".gviBook": {
+    "node": null,
+    "x": 121.88,
+    "y": 161.3,
+    "deltaX": 46.88,
+    "deltaY": -102.76,
+    "lastX": 75,
+    "lastY": 264.06,
+    "&-image": {
+      "width": 342.19,
+      "height": 179.69
+    },
+    "width": 160.94,
+    "height": 226.56,
+    "&-author": {
+      "width": 165.63,
+      "height": 118.75
+    }
+  }
+}

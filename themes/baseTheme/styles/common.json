@@ -187,7 +187,14 @@
       },
       "&-textView": {
         "flexProps": {
-          "flexGrow": 2
+          "flexGrow": 2,
+          "alignSelf": "STRETCH",
+          "direction": "INHERIT",
+          "alignItems": "STRETCH",
+          "justifyContent": "FLEX_START",
+          "alignContent": "STRETCH",
+          "flexWrap": "NOWRAP",
+          "flexDirection": "COLUMN"
         }
       },
       "&-bookTitle": {
@@ -202,7 +209,8 @@
           "bold": true,
           "italic": false
         },
-        "height": 10
+        "height": null,
+        "maxHeight": 40
       },
       "&-bookAuthor": {
         "flexProps": {
@@ -216,7 +224,8 @@
           "italic": false
         },
         "textColor": "rgba( 90, 90, 90, 1 )",
-        "height": 10
+        "height": null,
+        "maxHeight": 40
       },
       "&-point": {
         "flexProps": {
@@ -230,14 +239,40 @@
           "italic": false
         },
         "textColor": "rgba( 0, 0, 0, 1 )",
-        "height": 10
+        "height": null,
+        "maxHeight": 50
       }
     },
     "&-booList": {
       "&-image": {
         "flexProps": {
           "flexGrow": 1
-        }
+        },
+        "imageFillType": "NORMAL"
+      }
+    },
+    "&-lviBook": {
+      "flexProps": {
+        "positionType": "RELATIVE"
+      },
+      "flex": {
+        "positionType": 0
+      }
+    },
+    "&-gviBook": {
+      "flexProps": {
+        "positionType": "RELATIVE"
+      },
+      "flex": {
+        "positionType": 0
+      }
+    },
+    "&-separator": {
+      "flexProps": {
+        "positionType": "RELATIVE"
+      },
+      "flex": {
+        "positionType": 0
       }
     }
   },

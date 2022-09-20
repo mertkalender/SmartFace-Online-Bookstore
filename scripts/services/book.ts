@@ -6,6 +6,8 @@ fetch("https://www.dbooks.org/api/recent",
         },
     }
 );
+const axios = require('axios').default;
+
 export type Book = {
   id: string;
   title: string;
@@ -16,18 +18,21 @@ export type Book = {
 };
 
 type GetBooksResponse = {
-  results: Book[];
-  info: {
-    seed: string;
-    results: number;
-    page: number;
-    version: string;
-  };
+  data: {
+    books: Book[];
+    status: string;
+    total: number;
+  }
+  status: number;
+  statusText: string;
+  headers: {};
+  config: {};
+  request: {};
 };
 
 export async function getBooks(): Promise<GetBooksResponse> {
     try {
-      const response: GetBooksResponse = await fetch("/?results=100", {
+      const response = await axios.get("https://www.dbooks.org/api/recent", {
         method: "GET",
       });
       return response;

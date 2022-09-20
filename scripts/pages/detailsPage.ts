@@ -6,6 +6,7 @@ import Color from '@smartface/native/ui/color';
 import { i18n } from '@smartface/i18n';
 import { styleableContainerComponentMixin } from '@smartface/styling-context';
 import FlexLayout from '@smartface/native/ui/flexlayout';
+import { HeaderBarSystemItem } from '@smartface/native/ui/headerbaritem/headerbaritem';
 
 
 class StyleableFlexLayout extends styleableContainerComponentMixin(FlexLayout) {}
@@ -17,7 +18,7 @@ export default class detailsPage extends withDismissAndBackButton(DetailsPage) {
   indicatorItem: HeaderBarItem;
   itemWithBadge: HeaderBarItem;
   myItem: HeaderBarItem;
-  routeData: Record<string, any>;
+  routeData: Record<string, any> = this.route.getState().routeData;
   parentController: any;
   constructor(private router?: Router, private route?: Route) {
     super({});
@@ -67,9 +68,13 @@ export default class detailsPage extends withDismissAndBackButton(DetailsPage) {
       });
   
       this.itemWithBadge = new HeaderBarItem({
-        color: Color.BLUE,
+        color: Color.BLACK,
         android: {
           systemIcon: 17301545 // OR 'ic_dialog_email'
+        },
+        ios: {
+            systemItem: HeaderBarSystemItem.BOOKMARKS
+            
         },
         onPress: (): void => {
         }

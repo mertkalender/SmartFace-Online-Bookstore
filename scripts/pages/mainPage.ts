@@ -2,16 +2,15 @@ import MainPage from 'generated/pages/mainPage';
 import Label from '@smartface/native/ui/label';
 import { Route, Router } from '@smartface/router';
 import { styleableComponentMixin } from '@smartface/styling-context';
-import { i18n } from '@smartface/i18n';
 import { Book, getBooks } from 'services/book';
 import LviBook from "components/LviBook";
 import GviBook from "components/GviBook"
+import NavigationBar from '@smartface/native/application/android/navigationbar';
+
 
 class StyleableLabel extends styleableComponentMixin(Label) {}
 
 export default class mainPage extends MainPage {
-  private GVIBook: GviBook;
-  private LVIBook: LviBook;
   private data: Book[] = []
   private disposeables: (() => void)[] = [];
   lbl: StyleableLabel;
@@ -23,64 +22,71 @@ export default class mainPage extends MainPage {
 
   initListView() {
     // onRowHeight can be used as alternative
-    this.LVIBook.rowHeight = LviBook.getHeight();
-    this.LVIBook.onRowBind = (listViewItem: LviBook, index: number) => {
-      listViewItem.title = this.data[index].title;
-      listViewItem.imgName.loadFromUrl({
-        url: this.data[index].image,
+    this.newestBooksList.rowHeight
+    this.newestBooksList.rowHeight = LviBook.getHeight();
+    this.newestBooksList.onRowBind = (listViewItem: LviBook, index: number) => {
+      listViewItem.title.text = this.data[index]?.title;
+      listViewItem.author.text = this.data[index]?.authors;
+      listViewItem.image.loadFromUrl({
+        url: this.data[index]?.image,
         useHTTPCacheControl: true,
       });
     };
-
-    this.LVIBook.onPullRefresh = () => {
+    this.newestBooksList.onPullRefresh = () => {
       this.refreshGridView();
-      this.GVIBook.stopRefresh();
+      this.newestBooksList.stopRefresh();
     };
+    this.newestBooksList.onRowSelected = (listViewItem: LviBook, index) => {
+        console.log("Book list Pressed: ", index)
+        this.router.push(`page4`);
+    }
   }
 
 
   refreshListView() {
-    this.LVIBook.itemCount = this.data.length;
-    this.LVIBook.refreshData();
+    this.newestBooksList.itemCount = this.data.length;
+    this.newestBooksList.refreshData();
   }
 
 
   initGridView() {
     // onRowHeight can be used as alternative
-    this.GVIBook.rowHeight = GviBook.getHeight();
-    this.GVIBook.onRowBind = (gridViewItem: GviBook, index: number) => {
-        gridViewItem.title = this.data[index].title;
-        gridViewItem.imgName.loadFromUrl({
-            url: this.data[index].image,
+    this.popularBooksList.onItemBind = (gridViewItem: GviBook, index: number) => {
+        gridViewItem.title.text = this.data[index]?.title;
+        gridViewItem.author.text = this.data[index]?.authors;
+        gridViewItem.image.loadFromUrl({
+            url: this.data[index]?.image,
             useHTTPCacheControl: true,
         });
     };
 
-    this.GVIBook.onPullRefresh = () => {
+    this.popularBooksList.onPullRefresh = () => {
       this.refreshGridView();
-      this.GVIBook.stopRefresh();
+      this.popularBooksList.stopRefresh();
     };
-  }
 
-  refreshGridView() {
-    this.GVIBook.itemCount = this.data.length;
-    this.GVIBook.refreshData();
-  }
-
-
-  async getUsers() {
-    try {
-      const response = await getBooks();
-      this.data = response.results;
-      this.refreshGridView();
-      this.refreshListView();
-    } catch (e) {
-      alert(JSON.stringify(e, null, "\t"));
+    this.popularBooksList.onItemSelected = (gridViewItem: GviBook, index) => {
+        console.log("Book grid Pressed: ", index)
+        this.router.push(`page4`);
     }
   }
 
-  setTexts() {
-    this.lbl.text = i18n.instance.t('runtimeLabel');
+  refreshGridView() {
+    this.popularBooksList.itemCount = this.data.length;
+    this.popularBooksList.refreshData();
+  }
+
+
+  async getBooksData() {
+    try {
+      const response = await getBooks();
+      this.data = response.data.books;
+      console.log("DATA: ", this.data);
+      this.refreshGridView();
+      this.refreshListView();
+    } catch (e) {
+      console.log(JSON.stringify(e, null, "\t"));
+    }
   }
 
   /**
@@ -98,13 +104,17 @@ export default class mainPage extends MainPage {
    * This event is called once when page is created.
    */
   onLoad() {
+      
     super.onLoad();
-    this.setTexts();
-    console.log('mainPage onLoad');
+    this.initGridView();
+    this.initListView();
+    this.getBooksData();
+    console.log("DATA", this.data);
     this.headerBar.leftItemEnabled = false;
     this.addChild(this.lbl, 'page1lbl1unique', 'sf-label', (userProps: Record<string, any>) => {
       return { ...userProps };
-    });
+    });    
+    console.log('mainPage onLoad');
   }
 
   onHide(): void {

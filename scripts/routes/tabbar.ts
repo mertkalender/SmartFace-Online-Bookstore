@@ -2,38 +2,33 @@ import { BottomTabBarRouter, NativeStackRouter, Route, NativeRouter } from '@sma
 import Color from '@smartface/native/ui/color';
 import * as Pages from 'pages';
 import Image from '@smartface/native/ui/image';
+import TabbarItem from '@smartface/native/ui/tabbaritem';
 
 const bottomTabBarRouter = BottomTabBarRouter.of({
   path: '/btb',
   to: '/btb/tab1/page1',
   homeRoute: 0,
-  tabbarParams: () => ({
-    ios: { translucent: false },
-    itemColor: {
-      normal: Color.BLACK,
-      selected: Color.WHITE
-    },
-    backgroundColor: Color.create('#00A1F1')
-  }),
   items: [
-    {
-      title: 'Profile',
-      icon: Image.createFromFile('images://profile.png')
-    },
-    {
-      title: 'Messages',
-      icon: Image.createFromFile('images://messages.png')
-    },
-    {
-      title: 'Settings',
-      icon: Image.createFromFile('images://settings.png')
-    }
+    new TabbarItem({
+        title: 'Home',
+        icon: Image.createFromFile('images://smartface.png')
+      }),
+    
+    new TabbarItem({
+        title: 'Messages',
+        icon: Image.createFromFile('images://close_icon.png')
+    }),
+
+    new TabbarItem({
+        title: 'Settings',
+        icon: Image.createFromFile('images://arrow_back.png')
+    })
   ],
   // tab1
   routes: [
     // tab1
     NativeStackRouter.of({
-      path: '/pages/tab1',
+      path: '/btb/tab1',
       to: '/btb/tab1/page1',
       routes: [
         Route.of<Pages.mainPage>({
@@ -76,7 +71,7 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
           })
         })
       ]
-    })
+    }),
   ]
 });
 

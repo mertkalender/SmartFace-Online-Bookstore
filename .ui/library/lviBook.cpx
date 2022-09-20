@@ -1,15 +1,14 @@
 {
 	"components": [
 		{
-			"className": ".sf-listViewItem .simple-listviewItem",
+			"className": ".sf-listViewItem .simple-listviewItem .lviBook",
 			"hiddenComponent": false,
 			"id": "1841-ff9a-b968-028d",
 			"initialized": false,
 			"props": {
 				"children": [
 					"cf41-01de-fb7d-541a",
-					"7094-abfb-afb2-8d16",
-					"bd8f-5e00-4110-7fd7"
+					"7094-abfb-afb2-8d16"
 				],
 				"name": "lviBook",
 				"parent": "57f4-201f-4bfc-5fc6"
@@ -23,9 +22,10 @@
 		{
 			"className": ".sf-imageView #mainPage-booList-image",
 			"id": "cf41-01de-fb7d-541a",
+			"oldName": "imageView1",
 			"props": {
 				"children": [],
-				"name": "imageView1",
+				"name": "image",
 				"parent": "1841-ff9a-b968-028d"
 			},
 			"type": "ImageView",
@@ -36,9 +36,9 @@
 			"id": "7094-abfb-afb2-8d16",
 			"props": {
 				"children": [
-					"7472-aeaf-ef16-935c",
-					"d598-2746-4f35-5ebf",
-					"023f-4d3e-966f-3af0"
+					"0b21-3a05-4dfe-8bca",
+					"cc77-150d-dde7-be53",
+					"7472-aeaf-ef16-935c"
 				],
 				"name": "flexLayout1",
 				"parent": "1841-ff9a-b968-028d"
@@ -50,35 +50,29 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-label #mainPage-bookList-point",
-			"id": "7472-aeaf-ef16-935c",
+			"className": ".sf-label #mainPage-bookList-bookTitle",
+			"id": "0b21-3a05-4dfe-8bca",
+			"oldName": "label1",
 			"props": {
 				"children": [],
-				"maxLines": 1,
-				"name": "label3",
+				"name": "title",
 				"parent": "7094-abfb-afb2-8d16",
-				"text": "4.5/5"
-			},
-			"source": {
-				"page": "__library__"
+				"text": "Book Title"
 			},
 			"type": "Label",
 			"userProps": {
-				"maxLines": 1,
-				"text": "4.5/5"
+				"text": "Book Title"
 			}
 		},
 		{
 			"className": ".sf-label #mainPage-bookList-bookAuthor",
-			"id": "d598-2746-4f35-5ebf",
+			"id": "cc77-150d-dde7-be53",
+			"oldName": "label2",
 			"props": {
 				"children": [],
-				"name": "label2",
+				"name": "author",
 				"parent": "7094-abfb-afb2-8d16",
 				"text": "Book Author"
-			},
-			"source": {
-				"page": "__library__"
 			},
 			"type": "Label",
 			"userProps": {
@@ -86,35 +80,24 @@
 			}
 		},
 		{
-			"className": ".sf-label #mainPage-bookList-bookTitle",
-			"id": "023f-4d3e-966f-3af0",
+			"className": ".sf-label #mainPage-bookList-point",
+			"id": "7472-aeaf-ef16-935c",
+			"oldName": "label3",
 			"props": {
 				"children": [],
-				"name": "label1",
+				"maxLines": 1,
+				"name": "point",
 				"parent": "7094-abfb-afb2-8d16",
-				"text": "Book Title"
+				"text": "4.5/5"
 			},
 			"source": {
 				"page": "__library__"
 			},
 			"type": "Label",
 			"userProps": {
-				"text": "Book Title"
+				"maxLines": 1,
+				"text": "4.5/5"
 			}
-		},
-		{
-			"className": ".sf-flexLayout .simple-listviewItem-line .simple-listviewItem-simple-chevron .simple_listviewItem-flLine",
-			"id": "bd8f-5e00-4110-7fd7",
-			"props": {
-				"children": [],
-				"name": "flLine",
-				"parent": "1841-ff9a-b968-028d"
-			},
-			"source": {
-				"page": "__library__"
-			},
-			"type": "FlexLayout",
-			"userProps": {}
 		}
 	]
 }
