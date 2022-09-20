@@ -26,7 +26,7 @@
 			"version": "6.15.1"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".sf-statusBar #statusBar",
 			"id": "1439-dcd4-0006-b4c5",
 			"props": {
 				"children": [],

@@ -37,8 +37,7 @@ export default class mainPage extends MainPage {
       this.newestBooksList.stopRefresh();
     };
     this.newestBooksList.onRowSelected = (listViewItem: LviBook, index) => {
-        console.log("Book list Pressed: ", index)
-        this.router.push(`page4`);
+        this.router.push(`page4`, {book: this.data[index]});
     }
   }
 
@@ -66,8 +65,7 @@ export default class mainPage extends MainPage {
     };
 
     this.popularBooksList.onItemSelected = (gridViewItem: GviBook, index) => {
-        console.log("Book grid Pressed: ", index)
-        this.router.push(`page4`);
+        this.router.push(`page4`, {book: this.data[index]});
     }
   }
 

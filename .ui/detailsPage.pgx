@@ -26,7 +26,7 @@
 			"version": "6.15.1"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".sf-statusBar #statusBar",
 			"id": "af87-2dfb-19e7-3475",
 			"props": {
 				"children": [],
@@ -45,25 +45,26 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "e704-167c-966d-e30b",
-				"title": "Details Page"
+				"title": " "
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "Details Page"
+				"title": " "
 			}
 		},
 		{
 			"className": ".sf-flexLayout #detailsPage-bookInfo",
 			"id": "ca77-64de-1576-9a6a",
+			"oldName": "flexLayout2",
 			"props": {
 				"children": [
 					"8b41-7be7-55ea-feb8",
 					"7641-92fd-a3cc-bc46",
 					"c07e-e4d8-3d8f-f01d",
 					"e931-41e0-28c3-2a04",
-					"801d-e283-1109-df7b"
+					"f83f-1cd3-f9d3-4755"
 				],
-				"name": "flexLayout2",
+				"name": "bookInfo",
 				"parent": "e704-167c-966d-e30b"
 			},
 			"type": "FlexLayout",
@@ -72,9 +73,10 @@
 		{
 			"className": ".sf-imageView #bookPage-image",
 			"id": "8b41-7be7-55ea-feb8",
+			"oldName": "imageView1",
 			"props": {
 				"children": [],
-				"name": "imageView1",
+				"name": "image",
 				"parent": "ca77-64de-1576-9a6a"
 			},
 			"type": "ImageView",
@@ -83,9 +85,10 @@
 		{
 			"className": ".sf-label #bookPage-bookName",
 			"id": "7641-92fd-a3cc-bc46",
+			"oldName": "label1",
 			"props": {
 				"children": [],
-				"name": "label1",
+				"name": "title",
 				"parent": "ca77-64de-1576-9a6a",
 				"text": "Book Title"
 			},
@@ -97,23 +100,27 @@
 		{
 			"className": ".sf-label #bookPage-author",
 			"id": "c07e-e4d8-3d8f-f01d",
+			"oldName": "label2",
 			"props": {
 				"children": [],
-				"name": "label2",
+				"maxLines": 1,
+				"name": "author",
 				"parent": "ca77-64de-1576-9a6a",
 				"text": "Author"
 			},
 			"type": "Label",
 			"userProps": {
+				"maxLines": 1,
 				"text": "Author"
 			}
 		},
 		{
 			"className": ".sf-label #bookPage-point",
 			"id": "e931-41e0-28c3-2a04",
+			"oldName": "label1_1",
 			"props": {
 				"children": [],
-				"name": "label1_1",
+				"name": "point",
 				"parent": "ca77-64de-1576-9a6a",
 				"text": "4.5/5"
 			},
@@ -123,28 +130,32 @@
 			}
 		},
 		{
-			"className": ".sf-textArea #detailsPage-description",
-			"id": "801d-e283-1109-df7b",
+			"className": ".sf-label #detailsPage-description",
+			"id": "f83f-1cd3-f9d3-4755",
+			"oldName": "label1",
 			"props": {
 				"children": [],
-				"name": "textArea1",
+				"maxLines": 3,
+				"name": "description",
 				"parent": "ca77-64de-1576-9a6a",
-				"text": "Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur. \n  Aliquam erat volutpat. Suspendisse potenti."
+				"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis semper justo. In ultrices metus nec sodales consectetur Aliquam erat volutpat. Suspendisse potenti."
 			},
-			"type": "TextArea",
+			"type": "Label",
 			"userProps": {
-				"text": "Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur. \n  Aliquam erat volutpat. Suspendisse potenti."
+				"maxLines": 3,
+				"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis semper justo. In ultrices metus nec sodales consectetur Aliquam erat volutpat. Suspendisse potenti."
 			}
 		},
 		{
 			"className": ".sf-flexLayout #detailsPage-buttons",
 			"id": "2941-b7ef-7162-fba7",
+			"oldName": "flexLayout4",
 			"props": {
 				"children": [
 					"0f58-a6cb-6adb-fc1b",
 					"1c57-a3e3-e3c4-328a"
 				],
-				"name": "flexLayout4",
+				"name": "buttons",
 				"parent": "e704-167c-966d-e30b"
 			},
 			"type": "FlexLayout",

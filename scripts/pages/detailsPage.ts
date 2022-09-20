@@ -7,6 +7,7 @@ import { i18n } from '@smartface/i18n';
 import { styleableContainerComponentMixin } from '@smartface/styling-context';
 import FlexLayout from '@smartface/native/ui/flexlayout';
 import { HeaderBarSystemItem } from '@smartface/native/ui/headerbaritem/headerbaritem';
+import createRouteStore from '@smartface/router/lib/router/routeStore';
 
 
 class StyleableFlexLayout extends styleableContainerComponentMixin(FlexLayout) {}
@@ -25,15 +26,16 @@ export default class detailsPage extends withDismissAndBackButton(DetailsPage) {
 
   }
 
-  languageTest() {
-    console.log({
-      helloWorld: i18n.instance.t('helloWorld'),
-      welcomeUser: i18n.instance.t('welcomeUser', { user: 'Smartface' }),
-      keyWithCount0: i18n.instance.t('keyWithCount', { count: 0 }),
-      keyWithCount1: i18n.instance.t('keyWithCount', { count: 1 }),
-      keyWithCount5: i18n.instance.t('keyWithCount', { count: 5 })
-    });
+
+  initBook(){
+      this.image.loadFromUrl({
+        url: this.routeData.book?.image,
+        useHTTPCacheControl: true,
+      })
+      this.author.text = this.routeData.book?.authors;
+      this.title.text = this.routeData.book?.title;
   }
+
 
   /**
    * @event onShow
@@ -53,6 +55,7 @@ export default class detailsPage extends withDismissAndBackButton(DetailsPage) {
    */
   onLoad() {
     super.onLoad();
+    this.initBook();
     this.itemContainerFl = new StyleableFlexLayout();
     this.addChild(this.itemContainerFl, `itemContainerFl`, '.sf-flexLayout', {
       height: 50,
@@ -70,7 +73,7 @@ export default class detailsPage extends withDismissAndBackButton(DetailsPage) {
       this.itemWithBadge = new HeaderBarItem({
         color: Color.BLACK,
         android: {
-          systemIcon: 17301545 // OR 'ic_dialog_email'
+          systemIcon: "ic_dialog_email" // OR 'ic_dialog_email'
         },
         ios: {
             systemItem: HeaderBarSystemItem.BOOKMARKS
@@ -83,13 +86,5 @@ export default class detailsPage extends withDismissAndBackButton(DetailsPage) {
   
       this.itemWithBadge.badge.visible = true;
       this.itemWithBadge.badge.text = '7';
-
-    this.myItem = new HeaderBarItem({
-        title: 'Done',
-        onPress: function () {
-          console.log('You pressed Done item!');
-        }
-      });
-    this.headerBar.setItems([this.myItem]);
   }
 }

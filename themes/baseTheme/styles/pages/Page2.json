@@ -3,7 +3,6 @@
     "flexProps": {
       "justifyContent": "SPACE_AROUND"
     },
-    "paddingBottom": 20,
     "paddingLeft": 16,
     "paddingRight": 16,
     "&-lbl": {
@@ -55,6 +54,7 @@
       "marginBottom": 10,
       "marginTop": 10
     },
-    "backgroundColor": "rgba( 255, 255, 255, 1 )"
+    "backgroundColor": "rgba( 255, 255, 255, 1 )",
+    "paddingBottom": -10
   }
 }

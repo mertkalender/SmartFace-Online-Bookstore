@@ -4,7 +4,6 @@
       "justifyContent": "SPACE_BETWEEN",
       "alignItems": "STRETCH"
     },
-    "paddingBottom": 20,
     "paddingLeft": 16,
     "paddingRight": 16,
     "&-lbl": {

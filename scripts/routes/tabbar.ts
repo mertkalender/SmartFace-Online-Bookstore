@@ -29,7 +29,6 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
     // tab1
     NativeStackRouter.of({
       path: '/btb/tab1',
-      to: '/btb/tab1/page1',
       routes: [
         Route.of<Pages.mainPage>({
           path: `/btb/tab1/page1`,
@@ -39,7 +38,16 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
           headerBarParams: () => ({
             visible: true
           })
-        })
+        }),
+        Route.of<Pages.detailsPage>({
+            path: `/btb/tab1/page4`,
+            build(router, route) {
+              return new Pages.detailsPage(router, route);
+            },
+            headerBarParams: () => ({
+              visible: true
+            })
+          })
       ]
     }),
     NativeStackRouter.of({

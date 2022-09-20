@@ -2,6 +2,7 @@ import { NativeRouter, NativeStackRouter, Route } from '@smartface/router';
 import Application from '@smartface/native/application';
 import TabbarRoute from './tabbar';
 import detailsPage from 'pages/detailsPage';
+import System from '@smartface/native/device/system';
 
 Application.on('backButtonPressed', () => {
   NativeRouter.getActiveRouter()?.goBack();
@@ -11,15 +12,12 @@ Application.on('backButtonPressed', () => {
 const router = NativeRouter.of({
     path: '/',
     isRoot: true,
-    routes: [
-        Route.of<detailsPage>({
-            path: '/pages/page4',
-            build(router, route) {
-            return new detailsPage(router,route);
-            }
-        }),
-        TabbarRoute
-    ]
+    routes: [TabbarRoute]
 });
  
+router.listen((location, action) => {
+    System.isEmulator && console.log(`location: ${location.url} action : ${action}`);
+    Application.hideKeyboard();
+});
+
 export default router;
