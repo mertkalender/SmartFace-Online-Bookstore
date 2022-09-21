@@ -11,13 +11,8 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
   items: [
     new TabbarItem({
         title: 'Home',
-        icon: Image.createFromFile('images://smartface.png')
-      }),
-    
-    new TabbarItem({
-        title: 'Messages',
         icon: Image.createFromFile('images://close_icon.png')
-    }),
+      }),
 
     new TabbarItem({
         title: 'Settings',
@@ -58,21 +53,6 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
           path: `/btb/tab1/page2`,
           build(router, route) {
             return new Pages.savedPage(router, route);
-          },
-          headerBarParams: () => ({
-            visible: true
-          })
-        })
-      ]
-    }),
-    NativeStackRouter.of({
-      path: '/btb/tab3',
-      to: '/btb/tab3/page3',
-      routes: [
-        Route.of<Pages.cartPage>({
-          path: `/btb/tab3/page3`,
-          build(router, route) {
-            return new Pages.cartPage(router, route);
           },
           headerBarParams: () => ({
             visible: true

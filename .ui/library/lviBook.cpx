@@ -52,7 +52,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-flexLayout #mainPage-bookList-textView",
+			"className": ".sf-flexLayout #mainPage-bookList-textView .lviBook-infoContainer",
 			"id": "fcfc-776a-7e38-d518",
 			"oldName": "flexLayout8",
 			"props": {
@@ -93,7 +93,6 @@
 			"oldName": "label1",
 			"props": {
 				"children": [],
-				"maxLines": 1,
 				"name": "title",
 				"parent": "92ef-8939-18fc-4fdb",
 				"text": "Book Title"
@@ -103,7 +102,6 @@
 			},
 			"type": "Label",
 			"userProps": {
-				"maxLines": 1,
 				"text": "Book Title"
 			}
 		},
@@ -130,7 +128,6 @@
 			"oldName": "label1",
 			"props": {
 				"children": [],
-				"maxLines": 1,
 				"name": "author",
 				"parent": "b6b2-c507-668a-9148",
 				"text": "Book Author"
@@ -140,7 +137,6 @@
 			},
 			"type": "Label",
 			"userProps": {
-				"maxLines": 1,
 				"text": "Book Author"
 			}
 		},
@@ -167,7 +163,6 @@
 			"oldName": "label1",
 			"props": {
 				"children": [],
-				"maxLines": 1,
 				"name": "point",
 				"parent": "5efb-a459-5f42-308b",
 				"text": "4.5/5"
@@ -177,7 +172,6 @@
 			},
 			"type": "Label",
 			"userProps": {
-				"maxLines": 1,
 				"text": "4.5/5"
 			}
 		}

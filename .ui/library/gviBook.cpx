@@ -1,15 +1,15 @@
 {
 	"components": [
 		{
-			"className": ".sf-gridViewItem .simple-gridviewItem",
+			"className": ".sf-gridViewItem .simple-gridviewItem .gviBook",
 			"hiddenComponent": false,
 			"id": "aea8-55c1-833e-4baa",
 			"initialized": false,
 			"props": {
 				"children": [
-					"58e6-e69e-a1c1-d4b9",
-					"67de-5d59-e18c-7727",
-					"e92d-12a6-d5ab-b6da"
+					"1015-642e-a678-5582",
+					"7950-fee9-0d9b-7bd8",
+					"22ad-a4e0-a14a-3d23"
 				],
 				"name": "gviBook",
 				"parent": "57f4-201f-4bfc-5fc6"
@@ -21,35 +21,62 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-imageView .simple-gridviewItem-preview .gviBook-image",
-			"id": "58e6-e69e-a1c1-d4b9",
-			"oldName": "imgPreview",
+			"className": ".sf-flexLayout #mainPage-gridView-ImageContainer",
+			"id": "1015-642e-a678-5582",
+			"oldName": "flexLayout1",
 			"props": {
-				"autoHeight": 343.4782608695652,
-				"autoWidth": 343.4782608695652,
-				"children": [],
-				"name": "image",
+				"children": [
+					"c815-93a7-8ce5-f1f2"
+				],
+				"name": "imageContainer",
 				"parent": "aea8-55c1-833e-4baa"
 			},
 			"source": {
 				"page": "__library__"
 			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-imageView #mainPage-gridView-image",
+			"id": "c815-93a7-8ce5-f1f2",
+			"oldName": "imageView1",
+			"props": {
+				"children": [],
+				"name": "image",
+				"parent": "1015-642e-a678-5582"
+			},
+			"source": {
+				"page": "__library__"
+			},
 			"type": "ImageView",
-			"userProps": {
-				"autoHeight": 343.4782608695652,
-				"autoWidth": 343.4782608695652
-			}
+			"userProps": {}
 		},
 		{
-			"className": ".sf-label .simple-gridviewItem-title",
-			"id": "67de-5d59-e18c-7727",
-			"oldName": "bookTitle",
+			"className": ".sf-flexLayout #mainPage-gridView-titleContainer",
+			"id": "7950-fee9-0d9b-7bd8",
+			"oldName": "flexLayout2",
 			"props": {
-				"autoHeight": 20.652173913043477,
+				"children": [
+					"3963-8422-333f-b96a"
+				],
+				"name": "titleContainer",
+				"parent": "aea8-55c1-833e-4baa"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-label .titleText",
+			"id": "3963-8422-333f-b96a",
+			"oldName": "label1",
+			"props": {
 				"children": [],
-				"maxLines": 1,
 				"name": "title",
-				"parent": "aea8-55c1-833e-4baa",
+				"parent": "7950-fee9-0d9b-7bd8",
 				"text": "Book Title"
 			},
 			"source": {
@@ -57,31 +84,42 @@
 			},
 			"type": "Label",
 			"userProps": {
-				"autoHeight": 20.652173913043477,
-				"maxLines": 1,
 				"text": "Book Title"
 			}
 		},
 		{
-			"className": ".sf-label .simple-gridviewItem-subtitle",
-			"id": "e92d-12a6-d5ab-b6da",
-			"oldName": "bookAuthor",
+			"className": ".sf-flexLayout #mainPage-gridView-authorContainer",
+			"id": "22ad-a4e0-a14a-3d23",
+			"oldName": "flexLayout3",
 			"props": {
-				"autoHeight": 18.478260869565215,
+				"children": [
+					"7a0f-f0be-52f8-348e"
+				],
+				"name": "authorContainer",
+				"parent": "aea8-55c1-833e-4baa"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-label .authorText",
+			"id": "7a0f-f0be-52f8-348e",
+			"oldName": "label1",
+			"props": {
 				"children": [],
-				"maxLines": 1,
 				"name": "author",
-				"parent": "aea8-55c1-833e-4baa",
-				"text": "Book Author"
+				"parent": "22ad-a4e0-a14a-3d23",
+				"text": "label1"
 			},
 			"source": {
 				"page": "__library__"
 			},
 			"type": "Label",
 			"userProps": {
-				"autoHeight": 18.478260869565215,
-				"maxLines": 1,
-				"text": "Book Author"
+				"text": "label1"
 			}
 		}
 	]

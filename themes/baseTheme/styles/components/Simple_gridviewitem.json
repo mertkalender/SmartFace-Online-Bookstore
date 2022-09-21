@@ -55,5 +55,14 @@
       "textAlignment": "MIDCENTER",
       "textColor": "rgba( 0, 0, 0, 1 )"
     }
+  },
+  ".simple": {
+    "&-listviewItem": {
+      "flexProps": {
+        "alignItems": "FLEX_START",
+        "alignSelf": "CENTER",
+        "justifyContent": "CENTER"
+      }
+    }
   }
 }

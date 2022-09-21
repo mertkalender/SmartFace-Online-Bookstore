@@ -16,13 +16,11 @@ export default class mainPage extends MainPage {
   constructor(private router?: Router, private route?: Route) {
     super({});
     this.lbl = new StyleableLabel();
-    console.log('[page1] constructor');
   }
 
   initListView() {
     // onRowHeight can be used as alternative
     this.newestBooksList.rowHeight = LviBook.getHeight();
-    console.log(' LviBook.getHeight();', LviBook.getHeight());
     this.newestBooksList.onRowBind = (listViewItem: LviBook, index: number) => {
       listViewItem.title.text = this.data[index]?.title;
       listViewItem.author.text = this.data[index]?.authors;
@@ -75,7 +73,6 @@ export default class mainPage extends MainPage {
     try {
       const response = await getBooks();
       this.data = response.data.books;
-      console.log('DATA:s ', this.data);
       this.refreshGridView();
       this.refreshListView();
     } catch (e) {
@@ -89,7 +86,6 @@ export default class mainPage extends MainPage {
    */
   onShow() {
     super.onShow();
-    console.log('mainPage onShow');
     this.disposeables.push();
   }
   /**
@@ -101,12 +97,10 @@ export default class mainPage extends MainPage {
     this.initGridView();
     this.initListView();
     this.getBooksData();
-    console.log('DATA', this.data);
     this.headerBar.leftItemEnabled = false;
     this.addChild(this.lbl, 'page1lbl1unique', 'sf-label', (userProps: Record<string, any>) => {
       return { ...userProps };
     });
-    console.log('mainPage onLoad');
   }
 
   onHide(): void {

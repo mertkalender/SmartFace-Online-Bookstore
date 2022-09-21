@@ -107,9 +107,10 @@
     "&-listviewItem": {
       "flexProps": {
         "flexGrow": null,
-        "alignSelf": "STRETCH"
+        "alignSelf": "STRETCH",
+        "alignItems": "FLEX_START"
       },
-      "marginBottom": 10
+      "marginBottom": 30
     }
   }
 }

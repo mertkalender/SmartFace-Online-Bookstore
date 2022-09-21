@@ -196,12 +196,13 @@
           "flexWrap": "NOWRAP",
           "flexDirection": "COLUMN"
         },
-        "marginTop": 10,
-        "height": 160
+        "height": 160,
+        "marginLeft": 10,
+        "marginBottom": 20
       },
       "&-bookTitle": {
         "flexProps": {
-          "flexGrow": 1
+          "flexGrow": null
         },
         "textColor": "rgba( 0, 0, 0, 1 )",
         "font": {
@@ -212,11 +213,11 @@
           "italic": false
         },
         "height": 50,
-        "maxHeight": 40
+        "maxHeight": null
       },
       "&-bookAuthor": {
         "flexProps": {
-          "flexGrow": 1
+          "flexGrow": null
         },
         "font": {
           "name": "",
@@ -227,11 +228,11 @@
         },
         "textColor": "rgba( 90, 90, 90, 1 )",
         "height": 50,
-        "maxHeight": 40
+        "maxHeight": null
       },
       "&-point": {
         "flexProps": {
-          "flexGrow": 1
+          "flexGrow": null
         },
         "font": {
           "name": "",
@@ -250,8 +251,9 @@
         "flexProps": {
           "flexGrow": 1
         },
-        "imageFillType": "NORMAL",
-        "height": null
+        "imageFillType": "ASPECTFILL",
+        "height": null,
+        "borderRadius": 5
       }
     },
     "&-lviBook": {
@@ -276,6 +278,36 @@
       },
       "flex": {
         "positionType": 0
+      }
+    },
+    "&-gridView": {
+      "&-ImageContainer": {
+        "height": 200,
+        "flexProps": {
+          "flexGrow": null
+        },
+        "width": 165.3,
+        "borderWidth": null,
+        "borderRadius": null
+      },
+      "&-titleContainer": {
+        "height": 40,
+        "flexProps": {
+          "flexGrow": null
+        }
+      },
+      "&-authorContainer": {
+        "height": 40,
+        "flexProps": {
+          "flexGrow": null
+        }
+      },
+      "&-image": {
+        "imageFillType": "ASPECTFILL",
+        "flexProps": {
+          "flexGrow": 1
+        },
+        "borderRadius": 5
       }
     }
   },
@@ -416,9 +448,12 @@
     "&-bookList": {
       "&-imageView": {
         "flexProps": {
-          "flexGrow": 1
+          "flexGrow": null,
+          "alignSelf": "FLEX_START"
         },
-        "height": 170
+        "height": 160,
+        "width": 120,
+        "borderRadius": null
       }
     }
   },
@@ -431,7 +466,8 @@
       "size": 18,
       "bold": true,
       "italic": false
-    }
+    },
+    "ellipsizeMode": "CHARWRAPPING"
   },
   ".authorText": {
     "textColor": "rgba( 0, 0, 0, 0.77 )",
@@ -440,10 +476,25 @@
       "family": "Default",
       "style": "Regular",
       "bold": false,
-      "italic": false
-    }
+      "italic": false,
+      "size": 12
+    },
+    "ellipsizeMode": "CHARWRAPPING"
   },
   ".pointText": {
-    "textColor": "rgba( 0, 0, 0, 0.78 )"
+    "textColor": "rgba( 0, 0, 0, 0.78 )",
+    "ellipsizeMode": "CHARWRAPPING"
+  },
+  ".titleText": {
+    "textColor": "rgba( 0, 0, 0, 1 )",
+    "ellipsizeMode": "CHARWRAPPING",
+    "font": {
+      "name": "",
+      "family": "Default",
+      "style": "Bold",
+      "bold": true,
+      "italic": false,
+      "size": 13
+    }
   }
 }
