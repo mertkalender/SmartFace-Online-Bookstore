@@ -72,8 +72,6 @@ export default class mainPage extends MainPage {
     try {
       const response = await getBooks();
       this.data = response.data.books;
-      this.refreshGridView();
-      this.refreshListView();
     } catch (e) {
       console.log(JSON.stringify(e, null, '\t'));
     }
@@ -86,6 +84,8 @@ export default class mainPage extends MainPage {
   onShow() {
     super.onShow();
     this.disposeables.push();
+    this.refreshGridView();
+    this.refreshListView();
   }
   /**
    * @event onLoad
@@ -93,9 +93,9 @@ export default class mainPage extends MainPage {
    */
   onLoad() {
     super.onLoad();
+    this.getBooksData();
     this.initGridView();
     this.initListView();
-    this.getBooksData();
     this.headerBar.leftItemEnabled = false;
     this.addChild(this.lbl, 'page1lbl1unique', 'sf-label', (userProps: Record<string, any>) => {
       return { ...userProps };
