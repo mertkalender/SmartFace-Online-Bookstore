@@ -106,7 +106,7 @@
     },
     "&-listviewItem": {
       "flexProps": {
-        "flexGrow": 1,
+        "flexGrow": null,
         "alignSelf": "STRETCH"
       },
       "marginBottom": 10

@@ -1,7 +1,7 @@
 {
   ".lviBook": {
     "width": 375,
-    "height": 185.94,
+    "height": 173.44,
     "&-author": {
       "width": 250,
       "height": 76.56
@@ -9,6 +9,56 @@
     "&-title": {
       "width": 250,
       "height": 62.5
+    },
+    "flexProps": {
+      "flexDirection": "ROW"
+    },
+    "&-flexLayout2": {
+      "flexProps": {
+        "flexGrow": 1,
+        "flexDirection": "COLUMN"
+      },
+      "height": null,
+      "width": null
+    },
+    "&-flexLayout3": {
+      "flexProps": {
+        "flexGrow": 1,
+        "flexDirection": "COLUMN"
+      },
+      "height": null,
+      "width": null
+    },
+    "&-flexLayout4": {
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "height": null,
+      "width": null
+    },
+    "&-flexLayout5": {
+      "flexProps": {
+        "flexGrow": 1,
+        "flexDirection": "COLUMN"
+      },
+      "height": null,
+      "width": null
+    },
+    "&-flexLayout6": {
+      "flexProps": {
+        "flexGrow": 1,
+        "flexDirection": "COLUMN"
+      },
+      "height": null,
+      "width": null
+    },
+    "&-flexLayout7": {
+      "flexProps": {
+        "flexGrow": 1,
+        "flexDirection": "COLUMN"
+      },
+      "height": null,
+      "width": null
     }
   }
 }

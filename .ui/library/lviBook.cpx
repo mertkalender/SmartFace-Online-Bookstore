@@ -7,8 +7,8 @@
 			"initialized": false,
 			"props": {
 				"children": [
-					"cf41-01de-fb7d-541a",
-					"7094-abfb-afb2-8d16"
+					"a428-6978-5bae-c4e7",
+					"fcfc-776a-7e38-d518"
 				],
 				"name": "lviBook",
 				"parent": "57f4-201f-4bfc-5fc6"
@@ -20,27 +20,14 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-imageView #mainPage-booList-image",
-			"id": "cf41-01de-fb7d-541a",
-			"oldName": "imageView1",
-			"props": {
-				"children": [],
-				"name": "image",
-				"parent": "1841-ff9a-b968-028d"
-			},
-			"type": "ImageView",
-			"userProps": {}
-		},
-		{
-			"className": ".sf-flexLayout #mainPage-bookList-textView",
-			"id": "7094-abfb-afb2-8d16",
+			"className": ".sf-flexLayout #mainpage-bookList-imageView",
+			"id": "a428-6978-5bae-c4e7",
+			"oldName": "flexLayout7",
 			"props": {
 				"children": [
-					"0b21-3a05-4dfe-8bca",
-					"cc77-150d-dde7-be53",
-					"7472-aeaf-ef16-935c"
+					"f05b-a28e-1a4f-5794"
 				],
-				"name": "flexLayout1",
+				"name": "imageContainer",
 				"parent": "1841-ff9a-b968-028d"
 			},
 			"source": {
@@ -50,44 +37,139 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-label #mainPage-bookList-bookTitle",
-			"id": "0b21-3a05-4dfe-8bca",
+			"className": ".sf-imageView #mainPage-booList-image",
+			"id": "f05b-a28e-1a4f-5794",
+			"oldName": "imageView1",
+			"props": {
+				"children": [],
+				"name": "image",
+				"parent": "a428-6978-5bae-c4e7"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-flexLayout #mainPage-bookList-textView",
+			"id": "fcfc-776a-7e38-d518",
+			"oldName": "flexLayout8",
+			"props": {
+				"children": [
+					"92ef-8939-18fc-4fdb",
+					"b6b2-c507-668a-9148",
+					"5efb-a459-5f42-308b"
+				],
+				"name": "infoContainer",
+				"parent": "1841-ff9a-b968-028d"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-flexLayout #mainPage-bookList-bookTitle",
+			"id": "92ef-8939-18fc-4fdb",
+			"oldName": "flexLayout8",
+			"props": {
+				"children": [
+					"73fa-888d-532c-8940"
+				],
+				"name": "titleContainer",
+				"parent": "fcfc-776a-7e38-d518"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-label .boldText",
+			"id": "73fa-888d-532c-8940",
 			"oldName": "label1",
 			"props": {
 				"children": [],
+				"maxLines": 1,
 				"name": "title",
-				"parent": "7094-abfb-afb2-8d16",
+				"parent": "92ef-8939-18fc-4fdb",
 				"text": "Book Title"
+			},
+			"source": {
+				"page": "__library__"
 			},
 			"type": "Label",
 			"userProps": {
+				"maxLines": 1,
 				"text": "Book Title"
 			}
 		},
 		{
-			"className": ".sf-label #mainPage-bookList-bookAuthor",
-			"id": "cc77-150d-dde7-be53",
-			"oldName": "label2",
+			"className": ".sf-flexLayout #mainPage-bookList-bookAuthor",
+			"id": "b6b2-c507-668a-9148",
+			"oldName": "flexLayout9",
+			"props": {
+				"children": [
+					"16f6-0a02-a78a-b186"
+				],
+				"name": "authorContainer",
+				"parent": "fcfc-776a-7e38-d518"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-label .authorText",
+			"id": "16f6-0a02-a78a-b186",
+			"oldName": "label1",
 			"props": {
 				"children": [],
+				"maxLines": 1,
 				"name": "author",
-				"parent": "7094-abfb-afb2-8d16",
+				"parent": "b6b2-c507-668a-9148",
 				"text": "Book Author"
+			},
+			"source": {
+				"page": "__library__"
 			},
 			"type": "Label",
 			"userProps": {
+				"maxLines": 1,
 				"text": "Book Author"
 			}
 		},
 		{
-			"className": ".sf-label #mainPage-bookList-point",
-			"id": "7472-aeaf-ef16-935c",
-			"oldName": "label3",
+			"className": ".sf-flexLayout #mainPage-bookList-point",
+			"id": "5efb-a459-5f42-308b",
+			"oldName": "flexLayout10",
+			"props": {
+				"children": [
+					"324c-3215-9429-357c"
+				],
+				"name": "pointContainer",
+				"parent": "fcfc-776a-7e38-d518"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-label .pointText",
+			"id": "324c-3215-9429-357c",
+			"oldName": "label1",
 			"props": {
 				"children": [],
 				"maxLines": 1,
 				"name": "point",
-				"parent": "7094-abfb-afb2-8d16",
+				"parent": "5efb-a459-5f42-308b",
 				"text": "4.5/5"
 			},
 			"source": {

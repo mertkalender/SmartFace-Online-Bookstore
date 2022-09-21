@@ -195,7 +195,9 @@
           "alignContent": "STRETCH",
           "flexWrap": "NOWRAP",
           "flexDirection": "COLUMN"
-        }
+        },
+        "marginTop": 10,
+        "height": 160
       },
       "&-bookTitle": {
         "flexProps": {
@@ -209,7 +211,7 @@
           "bold": true,
           "italic": false
         },
-        "height": null,
+        "height": 50,
         "maxHeight": 40
       },
       "&-bookAuthor": {
@@ -224,7 +226,7 @@
           "italic": false
         },
         "textColor": "rgba( 90, 90, 90, 1 )",
-        "height": null,
+        "height": 50,
         "maxHeight": 40
       },
       "&-point": {
@@ -239,7 +241,7 @@
           "italic": false
         },
         "textColor": "rgba( 0, 0, 0, 1 )",
-        "height": null,
+        "height": 50,
         "maxHeight": 50
       }
     },
@@ -248,7 +250,8 @@
         "flexProps": {
           "flexGrow": 1
         },
-        "imageFillType": "NORMAL"
+        "imageFillType": "NORMAL",
+        "height": null
       }
     },
     "&-lviBook": {
@@ -408,5 +411,39 @@
         "italic": false
       }
     }
+  },
+  "#mainpage": {
+    "&-bookList": {
+      "&-imageView": {
+        "flexProps": {
+          "flexGrow": 1
+        },
+        "height": 170
+      }
+    }
+  },
+  ".boldText": {
+    "textColor": "rgba( 0, 0, 0, 1 )",
+    "font": {
+      "name": "",
+      "family": "Default",
+      "style": "Bold",
+      "size": 18,
+      "bold": true,
+      "italic": false
+    }
+  },
+  ".authorText": {
+    "textColor": "rgba( 0, 0, 0, 0.77 )",
+    "font": {
+      "name": "",
+      "family": "Default",
+      "style": "Regular",
+      "bold": false,
+      "italic": false
+    }
+  },
+  ".pointText": {
+    "textColor": "rgba( 0, 0, 0, 0.78 )"
   }
 }
