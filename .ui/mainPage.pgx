@@ -164,7 +164,6 @@
 				"children": [
 					"9d4d-737b-454f-81b2"
 				],
-				"itemCount": 5,
 				"itemLength": 227,
 				"layoutManager": {
 					"scrollDirection": "HORIZONTAL",
@@ -175,7 +174,6 @@
 			},
 			"type": "GridView",
 			"userProps": {
-				"itemCount": 5,
 				"itemLength": 227,
 				"layoutManager": {
 					"scrollDirection": "HORIZONTAL",
@@ -239,15 +237,13 @@
 				"children": [
 					"99cb-6535-dd8e-9f3c"
 				],
-				"itemCount": 5,
 				"name": "newestBooksList",
 				"parent": "d912-db22-d060-defd",
-				"rowHeight": 54
+				"rowHeight": 250
 			},
 			"type": "ListView",
 			"userProps": {
-				"itemCount": 5,
-				"rowHeight": 54
+				"rowHeight": 250
 			}
 		},
 		{

@@ -1,12 +1,13 @@
-fetch("https://www.dbooks.org/api/recent",
-    {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-    }
-);
-const axios = require('axios').default;
+import axios from 'axios';
+// fetch("https://www.dbooks.org/api/recent",
+//     {
+//         method: 'POST',
+//         headers: {
+//           'Content-Type': 'application/json'
+//         },
+//     }
+// );
+// const axios = require('axios').default;
 
 export type Book = {
   id: string;
@@ -22,7 +23,7 @@ type GetBooksResponse = {
     books: Book[];
     status: string;
     total: number;
-  }
+  };
   status: number;
   statusText: string;
   headers: {};
@@ -30,14 +31,14 @@ type GetBooksResponse = {
   request: {};
 };
 
-export async function getBooks(): Promise<GetBooksResponse> {
-    try {
-      const response = await axios.get("https://www.dbooks.org/api/recent", {
-        method: "GET",
-      });
-      return response;
-    } catch (e) {
-      console.error(e);
-      throw e;
-    }
+export async function getBooks(): Promise<any> {
+  try {
+    const response = await axios.get('https://www.dbooks.org/api/recent', {
+      method: 'GET'
+    });
+    return response;
+  } catch (e) {
+    console.error(e);
+    throw e;
   }
+}

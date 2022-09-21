@@ -1,7 +1,7 @@
 {
 	"files": [
-		"script://generated/pages/detailsPage/index.js",
-		"script://generated/pages/detailsPage/index.js.map",
+		"script://generated/themes/baseTheme.json",
+		"script://generated/themes/defaultTheme.json",
 		"script://node_modules/@babel/runtime/helpers/AsyncGenerator.js",
 		"script://node_modules/@babel/runtime/helpers/AwaitValue.js",
 		"script://node_modules/@babel/runtime/helpers/OverloadYield.js",

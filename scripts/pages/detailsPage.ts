@@ -9,10 +9,7 @@ import FlexLayout from '@smartface/native/ui/flexlayout';
 import { HeaderBarSystemItem } from '@smartface/native/ui/headerbaritem/headerbaritem';
 import createRouteStore from '@smartface/router/lib/router/routeStore';
 
-
 class StyleableFlexLayout extends styleableContainerComponentMixin(FlexLayout) {}
-
-
 
 export default class detailsPage extends withDismissAndBackButton(DetailsPage) {
   itemContainerFl: StyleableFlexLayout;
@@ -23,19 +20,16 @@ export default class detailsPage extends withDismissAndBackButton(DetailsPage) {
   parentController: any;
   constructor(private router?: Router, private route?: Route) {
     super({});
-
   }
 
-
-  initBook(){
-      this.image.loadFromUrl({
-        url: this.routeData.book?.image,
-        useHTTPCacheControl: true,
-      })
-      this.author.text = this.routeData.book?.authors;
-      this.title.text = this.routeData.book?.title;
+  initBook() {
+    this.image.loadFromUrl({
+      url: this.routeData.book?.image,
+      useHTTPCacheControl: true
+    });
+    this.author.text = this.routeData.book?.authors;
+    this.title.text = this.routeData.book?.title;
   }
-
 
   /**
    * @event onShow
@@ -44,7 +38,7 @@ export default class detailsPage extends withDismissAndBackButton(DetailsPage) {
   onShow() {
     super.onShow();
     this.headerBar.leftItemEnabled = false;
-    this.headerBar.itemColor = Color.BLACK
+    this.headerBar.itemColor = Color.BLACK;
     this.initBackButton(this.router);
     this.routeData && console.info(this.routeData.message);
   }
@@ -65,26 +59,24 @@ export default class detailsPage extends withDismissAndBackButton(DetailsPage) {
         alignItems: 'CENTER'
       }
     });
-    
+
     this.indicatorItem = new HeaderBarItem({
-        customView: this.itemContainerFl
-      });
-  
-      this.itemWithBadge = new HeaderBarItem({
-        color: Color.BLACK,
-        android: {
-          systemIcon: "ic_dialog_email" // OR 'ic_dialog_email'
-        },
-        ios: {
-            systemItem: HeaderBarSystemItem.BOOKMARKS
-            
-        },
-        onPress: (): void => {
-        }
-      });
-      this.headerBar.setItems([this.itemWithBadge]);
-  
-      this.itemWithBadge.badge.visible = true;
-      this.itemWithBadge.badge.text = '7';
+      customView: this.itemContainerFl
+    });
+
+    this.itemWithBadge = new HeaderBarItem({
+      color: Color.BLACK,
+      android: {
+        systemIcon: 17301545 // OR 'ic_dialog_email'
+      },
+      ios: {
+        systemItem: HeaderBarSystemItem.BOOKMARKS
+      },
+      onPress: (): void => {}
+    });
+    this.headerBar.setItems([this.itemWithBadge]);
+
+    this.itemWithBadge.badge.visible = true;
+    this.itemWithBadge.badge.text = '7';
   }
 }
