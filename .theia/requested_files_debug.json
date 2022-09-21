@@ -1,9 +1,5 @@
 {
 	"files": [
-		"script://generated/my-components/GviBook.js",
-		"script://generated/my-components/GviBook.js.map",
-		"script://generated/my-components/LviBook.js",
-		"script://generated/my-components/LviBook.js.map",
 		"script://generated/themes/baseTheme.json",
 		"script://generated/themes/defaultTheme.json",
 		"script://node_modules/@babel/runtime/helpers/AsyncGenerator.js",
@@ -1654,6 +1650,16 @@
 		"script://node_modules/void-elements/index.js",
 		"script://node_modules/void-elements/package.json",
 		"script://node_modules/void-elements/pre-publish.js",
-		"script://node_modules/void-elements/test/index.js"
+		"script://node_modules/void-elements/test/index.js",
+		"script://pages/detailsPage.js",
+		"script://pages/detailsPage.js.map",
+		"script://pages/index.js",
+		"script://pages/index.js.map",
+		"script://pages/mainPage.js",
+		"script://pages/mainPage.js.map",
+		"script://routes/index.js",
+		"script://routes/index.js.map",
+		"script://routes/tabbar.js",
+		"script://routes/tabbar.js.map"
 	]
 }

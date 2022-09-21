@@ -1,6 +1,6 @@
 import DetailsPage from 'generated/pages/detailsPage';
 import HeaderBarItem from '@smartface/native/ui/headerbaritem';
-import { Router, Route, NativeStackRouter } from '@smartface/router';
+import { Router, Route } from '@smartface/router';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import Color from '@smartface/native/ui/color';
 import { styleableContainerComponentMixin } from '@smartface/styling-context';
@@ -16,7 +16,7 @@ export default class detailsPage extends withDismissAndBackButton(DetailsPage) {
   myItem: HeaderBarItem;
   routeData: Record<string, any> = this.route.getState().routeData;
   parentController: any;
-  constructor(private router?: Router, private route?: Route, private NativeStackRouter?: NativeStackRouter) {
+  constructor(private router?: Router, private route?: Route) {
     super({});
   }
 
@@ -38,7 +38,6 @@ export default class detailsPage extends withDismissAndBackButton(DetailsPage) {
     this.headerBar.leftItemEnabled = false;
     this.headerBar.itemColor = Color.BLACK;
     this.initBackButton(this.router);
-    this.initBackButtononiOS(this.NativeStackRouter);
     this.routeData && console.info(this.routeData.message);
   }
 
