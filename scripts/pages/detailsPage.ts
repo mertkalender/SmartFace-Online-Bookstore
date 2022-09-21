@@ -1,21 +1,9 @@
 import DetailsPage from 'generated/pages/detailsPage';
-import HeaderBarItem from '@smartface/native/ui/headerbaritem';
 import { Router, Route } from '@smartface/router';
 import { withDismissAndBackButton } from '@smartface/mixins';
-import Color from '@smartface/native/ui/color';
-import { styleableContainerComponentMixin } from '@smartface/styling-context';
-import FlexLayout from '@smartface/native/ui/flexlayout';
-import { HeaderBarSystemItem } from '@smartface/native/ui/headerbaritem/headerbaritem';
-
-class StyleableFlexLayout extends styleableContainerComponentMixin(FlexLayout) {}
 
 export default class detailsPage extends withDismissAndBackButton(DetailsPage) {
-  itemContainerFl: StyleableFlexLayout;
-  indicatorItem: HeaderBarItem;
-  itemWithBadge: HeaderBarItem;
-  myItem: HeaderBarItem;
   routeData: Record<string, any> = this.route.getState().routeData;
-  parentController: any;
   constructor(private router?: Router, private route?: Route) {
     super({});
   }
@@ -35,8 +23,6 @@ export default class detailsPage extends withDismissAndBackButton(DetailsPage) {
    */
   onShow() {
     super.onShow();
-    this.headerBar.leftItemEnabled = false;
-    this.headerBar.itemColor = Color.BLACK;
     this.initBackButton(this.router);
     this.routeData && console.info(this.routeData.message);
   }
@@ -48,33 +34,5 @@ export default class detailsPage extends withDismissAndBackButton(DetailsPage) {
   onLoad() {
     super.onLoad();
     this.initBook();
-    this.itemContainerFl = new StyleableFlexLayout();
-    this.addChild(this.itemContainerFl, `itemContainerFl`, '.sf-flexLayout', {
-      height: 50,
-      width: 50,
-      flexProps: {
-        justifyContent: 'CENTER',
-        alignItems: 'CENTER'
-      }
-    });
-
-    this.indicatorItem = new HeaderBarItem({
-      customView: this.itemContainerFl
-    });
-
-    this.itemWithBadge = new HeaderBarItem({
-      color: Color.BLACK,
-      android: {
-        systemIcon: 17301545 // OR 'ic_dialog_email'
-      },
-      ios: {
-        systemItem: HeaderBarSystemItem.BOOKMARKS
-      },
-      onPress: (): void => {}
-    });
-    this.headerBar.setItems([this.itemWithBadge]);
-
-    this.itemWithBadge.badge.visible = true;
-    this.itemWithBadge.badge.text = '7';
   }
 }
