@@ -5,7 +5,6 @@ import { styleableComponentMixin } from '@smartface/styling-context';
 import { Book, getBooks } from 'services/book';
 import LviBook from 'components/LviBook';
 import GviBook from 'components/GviBook';
-import NavigationBar from '@smartface/native/application/android/navigationbar';
 
 class StyleableLabel extends styleableComponentMixin(Label) {}
 

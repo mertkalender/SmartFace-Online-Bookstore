@@ -1,5 +1,4 @@
 import { BottomTabBarRouter, NativeStackRouter, Route, NativeRouter } from '@smartface/router';
-import Color from '@smartface/native/ui/color';
 import * as Pages from 'pages';
 import Image from '@smartface/native/ui/image';
 import TabbarItem from '@smartface/native/ui/tabbaritem';

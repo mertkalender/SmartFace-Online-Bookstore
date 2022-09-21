@@ -93,6 +93,7 @@
 			"oldName": "label1",
 			"props": {
 				"children": [],
+				"maxLines": 2,
 				"name": "title",
 				"parent": "92ef-8939-18fc-4fdb",
 				"text": "Book Title"
@@ -102,6 +103,7 @@
 			},
 			"type": "Label",
 			"userProps": {
+				"maxLines": 2,
 				"text": "Book Title"
 			}
 		},
@@ -128,6 +130,7 @@
 			"oldName": "label1",
 			"props": {
 				"children": [],
+				"maxLines": 2,
 				"name": "author",
 				"parent": "b6b2-c507-668a-9148",
 				"text": "Book Author"
@@ -137,6 +140,7 @@
 			},
 			"type": "Label",
 			"userProps": {
+				"maxLines": 2,
 				"text": "Book Author"
 			}
 		},
@@ -163,6 +167,7 @@
 			"oldName": "label1",
 			"props": {
 				"children": [],
+				"maxLines": 2,
 				"name": "point",
 				"parent": "5efb-a459-5f42-308b",
 				"text": "4.5/5"
@@ -172,6 +177,7 @@
 			},
 			"type": "Label",
 			"userProps": {
+				"maxLines": 2,
 				"text": "4.5/5"
 			}
 		}

@@ -467,7 +467,7 @@
       "bold": true,
       "italic": false
     },
-    "ellipsizeMode": "CHARWRAPPING"
+    "ellipsizeMode": "WORDWRAPPING"
   },
   ".authorText": {
     "textColor": "rgba( 0, 0, 0, 0.77 )",
@@ -479,15 +479,15 @@
       "italic": false,
       "size": 12
     },
-    "ellipsizeMode": "CHARWRAPPING"
+    "ellipsizeMode": "WORDWRAPPING"
   },
   ".pointText": {
     "textColor": "rgba( 0, 0, 0, 0.78 )",
-    "ellipsizeMode": "CHARWRAPPING"
+    "ellipsizeMode": "WORDWRAPPING"
   },
   ".titleText": {
     "textColor": "rgba( 0, 0, 0, 1 )",
-    "ellipsizeMode": "CHARWRAPPING",
+    "ellipsizeMode": "WORDWRAPPING",
     "font": {
       "name": "",
       "family": "Default",
