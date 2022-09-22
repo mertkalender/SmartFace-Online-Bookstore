@@ -27,3 +27,26 @@ scripts/generated
 
 # Ignore automated images which users put manually
 images/automated/*.png
+
+.vscode
+.npm/*
+.theia/*
+output/*
+plugins/*
+!plugins/Android
+plugins/Android/*
+!plugins/Android/README.md
+!plugins/iOS
+plugins/iOS/*
+!plugins/iOS/README.md
+images/automated/*.png
+!output/Android/README.md
+!output/iOS/README.md
+!output/.license.xml
+node_modules/
+scripts/generated
+.DS_Store
+/packages
+dist
+yarn-error.log
+/libs
