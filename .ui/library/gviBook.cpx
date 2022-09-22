@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-gridViewItem .simple-gridviewItem .gviBook",
+			"className": ".sf-gridViewItem .simple-gridviewItem",
 			"hiddenComponent": false,
 			"id": "aea8-55c1-833e-4baa",
 			"initialized": false,

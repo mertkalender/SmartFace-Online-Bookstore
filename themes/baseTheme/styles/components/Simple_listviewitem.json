@@ -76,7 +76,7 @@
         }
       },
       "width": 150,
-      "height": 227,
+      "height": 300,
       "flexProps": {
         "positionType": "RELATIVE",
         "alignSelf": "AUTO",

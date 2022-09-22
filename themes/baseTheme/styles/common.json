@@ -310,7 +310,7 @@
         "borderRadius": 5
       },
       "&-infoContainer": {
-        "height": 80,
+        "height": 100,
         "width": 150
       }
     }
@@ -520,7 +520,7 @@
       "size": 12
     },
     "ellipsizeMode": "WORDWRAPPING",
-    "height": 40,
+    "height": 50,
     "textAlignment": "MIDLEFT",
     "textColor": "rgba( 0, 0, 0, 0.55 )"
   },
@@ -540,7 +540,7 @@
       "italic": false,
       "size": 13
     },
-    "height": 40,
+    "height": 50,
     "textAlignment": "MIDLEFT"
   }
 }
