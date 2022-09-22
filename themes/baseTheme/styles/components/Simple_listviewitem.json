@@ -75,7 +75,7 @@
           "flexGrow": 10
         }
       },
-      "width": 165,
+      "width": 150,
       "height": 227,
       "flexProps": {
         "positionType": "RELATIVE",
