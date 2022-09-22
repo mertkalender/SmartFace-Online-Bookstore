@@ -308,6 +308,10 @@
           "flexGrow": 1
         },
         "borderRadius": 5
+      },
+      "&-infoContainer": {
+        "height": 80,
+        "width": 165
       }
     }
   },
@@ -467,7 +471,8 @@
       "bold": true,
       "italic": false
     },
-    "ellipsizeMode": "WORDWRAPPING"
+    "ellipsizeMode": "WORDWRAPPING",
+    "height": 50
   },
   ".authorText": {
     "textColor": "rgba( 0, 0, 0, 0.77 )",
@@ -479,11 +484,13 @@
       "italic": false,
       "size": 12
     },
-    "ellipsizeMode": "WORDWRAPPING"
+    "ellipsizeMode": "WORDWRAPPING",
+    "height": 40
   },
   ".pointText": {
     "textColor": "rgba( 0, 0, 0, 0.78 )",
-    "ellipsizeMode": "WORDWRAPPING"
+    "ellipsizeMode": "WORDWRAPPING",
+    "height": 50
   },
   ".titleText": {
     "textColor": "rgba( 0, 0, 0, 1 )",
@@ -495,6 +502,7 @@
       "bold": true,
       "italic": false,
       "size": 13
-    }
+    },
+    "height": 40
   }
 }

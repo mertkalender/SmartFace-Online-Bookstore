@@ -13,12 +13,14 @@
 				"itemLength": 227,
 				"name": "__library__",
 				"orientation": "PORTRAIT",
-				"parent": null
+				"parent": null,
+				"rowHeight": 214.06
 			},
 			"type": "Page",
 			"userProps": {
 				"itemCount": 5,
-				"itemLength": 227
+				"itemLength": 227,
+				"rowHeight": 214.06
 			},
 			"version": "6.15.1"
 		},

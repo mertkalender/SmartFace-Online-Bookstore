@@ -8,8 +8,7 @@
 			"props": {
 				"children": [
 					"1015-642e-a678-5582",
-					"7950-fee9-0d9b-7bd8",
-					"22ad-a4e0-a14a-3d23"
+					"7e69-5df6-d2f9-ba1d"
 				],
 				"name": "gviBook",
 				"parent": "57f4-201f-4bfc-5fc6"
@@ -53,14 +52,15 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-flexLayout #mainPage-gridView-titleContainer",
-			"id": "7950-fee9-0d9b-7bd8",
-			"oldName": "flexLayout2",
+			"className": ".sf-flexLayout #mainPage-gridView-infoContainer",
+			"id": "7e69-5df6-d2f9-ba1d",
+			"oldName": "flexLayout1",
 			"props": {
 				"children": [
-					"3963-8422-333f-b96a"
+					"b00a-a647-9581-e3d1",
+					"17ab-2a37-9e31-36b1"
 				],
-				"name": "titleContainer",
+				"name": "infoContainer",
 				"parent": "aea8-55c1-833e-4baa"
 			},
 			"source": {
@@ -71,17 +71,14 @@
 		},
 		{
 			"className": ".sf-label .titleText",
-			"id": "3963-8422-333f-b96a",
+			"id": "b00a-a647-9581-e3d1",
 			"oldName": "label1",
 			"props": {
 				"children": [],
 				"maxLines": 2,
 				"name": "title",
-				"parent": "7950-fee9-0d9b-7bd8",
+				"parent": "7e69-5df6-d2f9-ba1d",
 				"text": "Book Title"
-			},
-			"source": {
-				"page": "__library__"
 			},
 			"type": "Label",
 			"userProps": {
@@ -90,35 +87,15 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout #mainPage-gridView-authorContainer",
-			"id": "22ad-a4e0-a14a-3d23",
-			"oldName": "flexLayout3",
-			"props": {
-				"children": [
-					"7a0f-f0be-52f8-348e"
-				],
-				"name": "authorContainer",
-				"parent": "aea8-55c1-833e-4baa"
-			},
-			"source": {
-				"page": "__library__"
-			},
-			"type": "FlexLayout",
-			"userProps": {}
-		},
-		{
 			"className": ".sf-label .authorText",
-			"id": "7a0f-f0be-52f8-348e",
+			"id": "17ab-2a37-9e31-36b1",
 			"oldName": "label1",
 			"props": {
 				"children": [],
 				"maxLines": 2,
 				"name": "author",
-				"parent": "22ad-a4e0-a14a-3d23",
+				"parent": "7e69-5df6-d2f9-ba1d",
 				"text": "Book Author"
-			},
-			"source": {
-				"page": "__library__"
 			},
 			"type": "Label",
 			"userProps": {

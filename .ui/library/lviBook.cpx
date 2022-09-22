@@ -57,9 +57,9 @@
 			"oldName": "flexLayout8",
 			"props": {
 				"children": [
-					"92ef-8939-18fc-4fdb",
-					"b6b2-c507-668a-9148",
-					"5efb-a459-5f42-308b"
+					"0241-6337-2828-eb0f",
+					"6512-086c-ab55-6854",
+					"0903-2f60-407b-59fe"
 				],
 				"name": "infoContainer",
 				"parent": "1841-ff9a-b968-028d"
@@ -71,35 +71,15 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-flexLayout #mainPage-bookList-bookTitle",
-			"id": "92ef-8939-18fc-4fdb",
-			"oldName": "flexLayout8",
-			"props": {
-				"children": [
-					"73fa-888d-532c-8940"
-				],
-				"name": "titleContainer",
-				"parent": "fcfc-776a-7e38-d518"
-			},
-			"source": {
-				"page": "__library__"
-			},
-			"type": "FlexLayout",
-			"userProps": {}
-		},
-		{
 			"className": ".sf-label .boldText",
-			"id": "73fa-888d-532c-8940",
+			"id": "0241-6337-2828-eb0f",
 			"oldName": "label1",
 			"props": {
 				"children": [],
 				"maxLines": 2,
 				"name": "title",
-				"parent": "92ef-8939-18fc-4fdb",
+				"parent": "fcfc-776a-7e38-d518",
 				"text": "Book Title"
-			},
-			"source": {
-				"page": "__library__"
 			},
 			"type": "Label",
 			"userProps": {
@@ -108,35 +88,15 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout #mainPage-bookList-bookAuthor",
-			"id": "b6b2-c507-668a-9148",
-			"oldName": "flexLayout9",
-			"props": {
-				"children": [
-					"16f6-0a02-a78a-b186"
-				],
-				"name": "authorContainer",
-				"parent": "fcfc-776a-7e38-d518"
-			},
-			"source": {
-				"page": "__library__"
-			},
-			"type": "FlexLayout",
-			"userProps": {}
-		},
-		{
 			"className": ".sf-label .authorText",
-			"id": "16f6-0a02-a78a-b186",
+			"id": "6512-086c-ab55-6854",
 			"oldName": "label1",
 			"props": {
 				"children": [],
 				"maxLines": 2,
 				"name": "author",
-				"parent": "b6b2-c507-668a-9148",
+				"parent": "fcfc-776a-7e38-d518",
 				"text": "Book Author"
-			},
-			"source": {
-				"page": "__library__"
 			},
 			"type": "Label",
 			"userProps": {
@@ -145,35 +105,15 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout #mainPage-bookList-point",
-			"id": "5efb-a459-5f42-308b",
-			"oldName": "flexLayout10",
-			"props": {
-				"children": [
-					"324c-3215-9429-357c"
-				],
-				"name": "pointContainer",
-				"parent": "fcfc-776a-7e38-d518"
-			},
-			"source": {
-				"page": "__library__"
-			},
-			"type": "FlexLayout",
-			"userProps": {}
-		},
-		{
 			"className": ".sf-label .pointText",
-			"id": "324c-3215-9429-357c",
+			"id": "0903-2f60-407b-59fe",
 			"oldName": "label1",
 			"props": {
 				"children": [],
 				"maxLines": 2,
 				"name": "point",
-				"parent": "5efb-a459-5f42-308b",
+				"parent": "fcfc-776a-7e38-d518",
 				"text": "4.5/5"
-			},
-			"source": {
-				"page": "__library__"
 			},
 			"type": "Label",
 			"userProps": {
