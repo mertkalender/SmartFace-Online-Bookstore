@@ -75,14 +75,15 @@
           "flexGrow": 10
         }
       },
-      "width": 150,
-      "height": 300,
+      "width": 135,
+      "height": 260,
       "flexProps": {
         "positionType": "RELATIVE",
         "alignSelf": "AUTO",
         "alignItems": "STRETCH",
         "justifyContent": "FLEX_START",
-        "alignContent": "CENTER"
+        "alignContent": "CENTER",
+        "flexGrow": null
       }
     },
     "&_gridviewItem": {

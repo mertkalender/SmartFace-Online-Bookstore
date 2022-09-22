@@ -1,7 +1,5 @@
 {
 	"files": [
-		"script://generated/my-components/GviBook.js",
-		"script://generated/my-components/GviBook.js.map",
 		"script://generated/themes/baseTheme.json",
 		"script://generated/themes/defaultTheme.json",
 		"script://node_modules/@babel/runtime/helpers/AsyncGenerator.js",

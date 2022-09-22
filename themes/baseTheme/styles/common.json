@@ -282,11 +282,11 @@
     },
     "&-gridView": {
       "&-ImageContainer": {
-        "height": 200,
+        "height": 180,
         "flexProps": {
           "flexGrow": null
         },
-        "width": 150,
+        "width": 135,
         "borderWidth": null,
         "borderRadius": null
       },
@@ -307,11 +307,12 @@
         "flexProps": {
           "flexGrow": 1
         },
-        "borderRadius": 5
+        "borderRadius": 5,
+        "width": null
       },
       "&-infoContainer": {
-        "height": 100,
-        "width": 150
+        "height": 80,
+        "width": 135
       }
     }
   },
@@ -520,7 +521,7 @@
       "size": 12
     },
     "ellipsizeMode": "WORDWRAPPING",
-    "height": 50,
+    "height": 40,
     "textAlignment": "MIDLEFT",
     "textColor": "rgba( 0, 0, 0, 0.55 )"
   },
@@ -540,7 +541,7 @@
       "italic": false,
       "size": 13
     },
-    "height": 50,
+    "height": 40,
     "textAlignment": "MIDLEFT"
   }
 }
