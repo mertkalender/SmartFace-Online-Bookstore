@@ -1,7 +1,7 @@
 {
   "#page2": {
     "flexProps": {
-      "justifyContent": "SPACE_AROUND"
+      "justifyContent": "SPACE_EVENLY"
     },
     "paddingLeft": 16,
     "paddingRight": 16,

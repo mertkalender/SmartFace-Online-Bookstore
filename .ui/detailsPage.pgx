@@ -9,8 +9,8 @@
 					"af87-2dfb-19e7-3475",
 					"23f9-6ae7-81be-071b",
 					"ca77-64de-1576-9a6a",
-					"2941-b7ef-7162-fba7",
-					"bec9-d51b-44df-ebcf"
+					"cf13-fb11-5f61-aaf0",
+					"cc8f-a4ea-5db6-8f9b"
 				],
 				"isRemovable": true,
 				"name": "detailsPage",
@@ -58,11 +58,8 @@
 			"oldName": "flexLayout2",
 			"props": {
 				"children": [
-					"8b41-7be7-55ea-feb8",
-					"7641-92fd-a3cc-bc46",
-					"c07e-e4d8-3d8f-f01d",
-					"e931-41e0-28c3-2a04",
-					"f83f-1cd3-f9d3-4755"
+					"4e38-8c97-3d75-c335",
+					"c8f7-1e13-f99b-4ddf"
 				],
 				"name": "bookInfo",
 				"parent": "e704-167c-966d-e30b"
@@ -71,25 +68,56 @@
 			"userProps": {}
 		},
 		{
+			"className": ".sf-flexLayout #detailsPage-imageContainer",
+			"id": "4e38-8c97-3d75-c335",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [
+					"01bc-acbd-9527-6380"
+				],
+				"name": "imageContainer",
+				"parent": "ca77-64de-1576-9a6a"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
 			"className": ".sf-imageView #bookPage-image",
-			"id": "8b41-7be7-55ea-feb8",
+			"id": "01bc-acbd-9527-6380",
 			"oldName": "imageView1",
 			"props": {
 				"children": [],
 				"name": "image",
-				"parent": "ca77-64de-1576-9a6a"
+				"parent": "4e38-8c97-3d75-c335"
 			},
 			"type": "ImageView",
 			"userProps": {}
 		},
 		{
+			"className": ".sf-flexLayout #bookPage-infoContainer",
+			"id": "c8f7-1e13-f99b-4ddf",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [
+					"5fec-a43a-1c3b-c8c3",
+					"c281-bc90-318a-e326",
+					"e42e-1088-edfd-c01c",
+					"14a6-afc8-f46f-d694"
+				],
+				"name": "infoContainer",
+				"parent": "ca77-64de-1576-9a6a"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
 			"className": ".sf-label #bookPage-bookName",
-			"id": "7641-92fd-a3cc-bc46",
+			"id": "5fec-a43a-1c3b-c8c3",
 			"oldName": "label1",
 			"props": {
 				"children": [],
 				"name": "title",
-				"parent": "ca77-64de-1576-9a6a",
+				"parent": "c8f7-1e13-f99b-4ddf",
 				"text": "Book Title"
 			},
 			"type": "Label",
@@ -99,13 +127,13 @@
 		},
 		{
 			"className": ".sf-label #bookPage-author",
-			"id": "c07e-e4d8-3d8f-f01d",
+			"id": "c281-bc90-318a-e326",
 			"oldName": "label2",
 			"props": {
 				"children": [],
 				"maxLines": 1,
 				"name": "author",
-				"parent": "ca77-64de-1576-9a6a",
+				"parent": "c8f7-1e13-f99b-4ddf",
 				"text": "Author"
 			},
 			"type": "Label",
@@ -116,12 +144,12 @@
 		},
 		{
 			"className": ".sf-label #bookPage-point",
-			"id": "e931-41e0-28c3-2a04",
+			"id": "e42e-1088-edfd-c01c",
 			"oldName": "label1_1",
 			"props": {
 				"children": [],
 				"name": "point",
-				"parent": "ca77-64de-1576-9a6a",
+				"parent": "c8f7-1e13-f99b-4ddf",
 				"text": "4.5/5"
 			},
 			"type": "Label",
@@ -131,13 +159,13 @@
 		},
 		{
 			"className": ".sf-label #detailsPage-description",
-			"id": "f83f-1cd3-f9d3-4755",
+			"id": "14a6-afc8-f46f-d694",
 			"oldName": "label1",
 			"props": {
 				"children": [],
 				"maxLines": 3,
 				"name": "description",
-				"parent": "ca77-64de-1576-9a6a",
+				"parent": "c8f7-1e13-f99b-4ddf",
 				"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis semper justo. In ultrices metus nec sodales consectetur Aliquam erat volutpat. Suspendisse potenti."
 			},
 			"type": "Label",
@@ -147,15 +175,15 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout #detailsPage-buttons",
-			"id": "2941-b7ef-7162-fba7",
-			"oldName": "flexLayout4",
+			"className": ".sf-flexLayout #bookPage-buttonsContainer",
+			"id": "cf13-fb11-5f61-aaf0",
+			"oldName": "flexLayout1",
 			"props": {
 				"children": [
-					"0f58-a6cb-6adb-fc1b",
-					"1c57-a3e3-e3c4-328a"
+					"5aa2-da72-c651-c3b3",
+					"f957-4d1f-6ca3-8df1"
 				],
-				"name": "buttons",
+				"name": "buttonsContainer",
 				"parent": "e704-167c-966d-e30b"
 			},
 			"type": "FlexLayout",
@@ -163,11 +191,12 @@
 		},
 		{
 			"className": ".sf-button #bookPage-detailButtons",
-			"id": "0f58-a6cb-6adb-fc1b",
+			"id": "5aa2-da72-c651-c3b3",
+			"oldName": "button3",
 			"props": {
 				"children": [],
-				"name": "button3",
-				"parent": "2941-b7ef-7162-fba7",
+				"name": "previewButton",
+				"parent": "cf13-fb11-5f61-aaf0",
 				"text": " PreView"
 			},
 			"type": "Button",
@@ -177,11 +206,12 @@
 		},
 		{
 			"className": ".sf-button #bookPage-detailButtons",
-			"id": "1c57-a3e3-e3c4-328a",
+			"id": "f957-4d1f-6ca3-8df1",
+			"oldName": "button2",
 			"props": {
 				"children": [],
-				"name": "button2",
-				"parent": "2941-b7ef-7162-fba7",
+				"name": "reviewsButton",
+				"parent": "cf13-fb11-5f61-aaf0",
 				"text": " ReViews"
 			},
 			"type": "Button",
@@ -191,10 +221,11 @@
 		},
 		{
 			"className": ".sf-button #detailsPage-purchaseButton",
-			"id": "bec9-d51b-44df-ebcf",
+			"id": "cc8f-a4ea-5db6-8f9b",
+			"oldName": "button1",
 			"props": {
 				"children": [],
-				"name": "button1",
+				"name": "purchaseButton",
 				"parent": "e704-167c-966d-e30b",
 				"text": "Buy Now for $46.99"
 			},
