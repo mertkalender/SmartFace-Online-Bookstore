@@ -75,6 +75,8 @@ export default class mainPage extends MainPage {
     } catch (e) {
       console.log(JSON.stringify(e, null, '\t'));
     }
+    this.refreshGridView();
+    this.refreshListView();
   }
 
   /**
@@ -84,8 +86,7 @@ export default class mainPage extends MainPage {
   onShow() {
     super.onShow();
     this.disposeables.push();
-    this.refreshGridView();
-    this.refreshListView();
+    this.getBooksData();
   }
   /**
    * @event onLoad
@@ -93,7 +94,6 @@ export default class mainPage extends MainPage {
    */
   onLoad() {
     super.onLoad();
-    this.getBooksData();
     this.initGridView();
     this.initListView();
     this.headerBar.leftItemEnabled = false;
